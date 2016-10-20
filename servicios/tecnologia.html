@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>kaab</title>
+  <link href="kaab2.jpg" rel="shortcut icon">
+  <link href="kaab2.jpg" rel="apple-touch-icon-precomposed">
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<script src="http://maps.googleapis.com/maps/api/js"></script>
+<script>
+$('.dropdown-button').dropdown({
+    inDuration: 300,
+    outDuration: 225,
+    constrain_width: false, // Does not change width of dropdown to that of the activator
+    hover: true, // Activate on hover
+    gutter: 0, // Spacing from edge
+    belowOrigin: false, // Displays dropdown below the button
+    alignment: 'left' // Displays dropdown with edge aligned to the left of button
+  }
+);
+var myCenter=new google.maps.LatLng(25.660719, -100.364432);
+var marker;
+function initialize()
+{
+  var mapProp = {
+    center:myCenter,
+    zoom:16,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+  var marker=new google.maps.Marker({
+    position:myCenter,
+    animation:google.maps.Animation.BOUNCE
+  });
+
+  marker.setMap(map);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+<style>
+</style>
+<body>
+  <nav  class="orange lighten-4" role="navigation">
+    <div class="nav-wrapper container">
+    <a id="logo-container" href="#" class="brand-logo"><img style="height:50px; width:100px;" src="logo.png"></></a>
+      <ul  class="right hide-on-med-and-down">
+        <!-- <li><a href="#">Navbar Link</a></li> -->
+        <li id="menu-item-1246" class="menu-item"><a href="" onclick="jumpToSection(event,'inicio')">INICIO</a></li>
+        <li id="menu-item-1180" ><a data-beloworigin="true" class='dropdown-button' data-activates='dropdown1' href="" onclick="jumpToSection(event,'servicios')">SERVICIOS</a>
+        </li><ul id='dropdown1' class='dropdown-content orange lighten-4 black-text text-darken-2'>
+      <li><a class="orange lighten-4 black-text text-darken-2" href="#!">Facial</a></li>
+      <li><a class="orange lighten-4 black-text text-darken-2" href="#!">Spa</a></li>
+      <li><a class="orange lighten-4 black-text text-darken-2" href="#!">Corporal</a></li>
+      <li><a class="orange lighten-4 black-text text-darken-2" href="#!">Tecnología</a></li>
+
+    </ul>
+
+        <li id="menu-item-1181" ><a href="" onclick="jumpToSection(event,'nosotros')">NOSOTROS</a></li>
+        <li id="menu-item-1182" ><a href="" onclick="jumpToSection(event,'experiences')">KAAB EXPERIENCES</a></li>
+        <li id="menu-item-1183"  ><a href="" onclick="jumpToSection(event,'contacto')">CONTACTO</a></li>
+      </ul>
+      <ul id="nav-mobile" class="side-nav">
+        <li id="menu-item-1246" class="menu-item"><a href="" onclick="jumpToSection(event,'inicio')">INICIO</a></li>
+        <li id="menu-item-1180" ><a href=""  class='dropdown-button' data-activates='dropdown1' onclick="jumpToSection(event,'servicios')">SERVICIOS</a></li>
+        <li id="menu-item-1181" ><a href="" onclick="jumpToSection(event,'nosotros')">NOSOTROS</a></li>
+        <li id="menu-item-1182" ><a href="" onclick="jumpToSection(event,'experiences')">KAAB EXPERIENCES</a></li>
+        <li id="menu-item-1183"  ><a href="" onclick="jumpToSection(event,'contacto')">CONTACTO</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+  <div id="index-banner" class="parallax-container ">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h1 class="header center white-text text-lighten-2">CONSENTIRTE  NO ES UN LUJO</h1>
+        <div class="row center">
+          <h5 class="redheader col s12 light">ES UNA NECESIDAD.</h5>
+        </div>
+        <div class="row center">
+          <!-- <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light red lighten-1">Get Started</a> -->
+        </div>
+        <br><br>
+      </div>
+    </div>
+    <div class="parallax"><img src="img/filter/4.jpg" alt="Unsplashed background img 1"></div>
+  </div>
+  <div class="container ">
+    <div class="section">
+      <!--   Icon Section   -->
+      <div class="row">
+        <h4 align="center">Tecnología</h4>
+          <p>En nuestros servicios inclu&iacute;mos la siguiente gama con tecnolog&iacute;a&nbsp;de punta.&nbsp;</p>      </div>
+      <div class="row">
+        <div class="col s12 m6 ">
+          <p><span style="text-decoration: underline;">Cavitaci&oacute;n</span></p>
+            <p>Tratamiento est&eacute;tico que consiste en aplicar ondas ultras&oacute;nicas en determinadas zonas del cuerpo para disminuir la grasa en ellas localizadas, o los llamados &ldquo;cojines de grasa&rdquo; que con dieta o ejercicio no desaparecen. Es un m&eacute;todo de moldeo del cuerpo, no para bajar de peso, por lo que no se recomienda en personas con m&aacute;s de 15kg de sobrepeso. realizado con aparato de cavitaci&oacute;n, el cual es auxiliar para destruir las c&eacute;lulas adiposas. El resultado es una disminuci&oacute;n del &aacute;rea a tratar, piel mas lisa y firme.</p>
+            <p><span style="text-decoration: underline;">Lipolisis</span></p>
+            <p>Combina la tecnolog&iacute;a de cavitaci&oacute;n y RF para eliminar los dep&oacute;sitos de grasa al mismo tiempo que reafirma la piel. La potencia es mayor que la aplicada con la cavitaci&oacute;n normal, por lo que es necesario una valoraci&oacute;n previa para determinar si se es candidato a dicho protocolo.</p>
+            <p><span style="text-decoration: underline;">BEM </span><span style="text-decoration: underline;">Therapy</span></p>
+            <p>Esta tecnolog&iacute;a re&uacute;ne todos los beneficios que la diatermia capacitiva&nbsp; y el biolectromagnetismo como son Regeneraci&oacute;n de Tejidos e Incremento en la circulaci&oacute;n sangu&iacute;nea. A nivel celular tiene un efecto en las fibras el&aacute;sticas de la piel, principalmente al col&aacute;geno, promoviendo su regeneraci&oacute;n, elevando la turgencia de la piel, trabajando de manera progresiva la flacidez y envejecimiento cut&aacute;neo.&nbsp; Se logra con esta tecnolog&iacute;a tratar la celulitis, flacidez,&nbsp; moldeo corporal, etc.</p></div>
+        <div class="col s12 m6">
+          <p><span style="text-decoration: underline;">Presoterapia</span></p>
+          <p>Esta tecnolog&iacute;a se basa en la aplicaci&oacute;n de presi&oacute;n positiva en sentido ascendente sobre las extremidades del cuerpo en forma secuencial, cuya finalidad es estimular la circulaci&oacute;n de retorno. Esto genera un drenaje linf&aacute;tico que favorece la eliminaci&oacute;n de l&iacute;quidos, sales, grasas y toxinas, que sabemos que son la causa de celulitis. Esta terapia es totalmente relajante y no invasiva, altamente recomendada en personas con estr&eacute;s, fatiga, pesadez en extremidades y auxiliar en tratamientos est&eacute;ticos de celulitis y varices incipientes.</p>
+          <p><span style="text-decoration: underline;">Termoelectroestimulador</span></p>
+          <p>La electroestimulaci&oacute;n o gimnasia pasiva es una t&eacute;cnica que utiliza una corriente el&eacute;ctrica adecuada para causar una contracci&oacute;n muscular de manera similar a los impulsos que env&iacute;a el sistema nervioso central para controlar las acciones de los m&uacute;sculos.Termoterapia&nbsp; es la irradiaci&oacute;n de luz infrarroja aumentando la temperatura de los tejidos, provocando un gasto metab&oacute;lico, acelerando los intercambios i&oacute;nicos, favoreciendo los procesos celulares. Al combinar ambas tecnolog&iacute;as se logra una disminuci&oacute;n de los adipositos y la celulitis, siendo id&oacute;neo para reafirmar y reducir medidas.</p>
+          <p><span style="text-decoration: underline;">Laserterapia</span></p>
+          <p>Esta tecnolog&iacute;a permite estimular al metabolismo celular e incrementar la s&iacute;ntesis del col&aacute;geno, la circulaci&oacute;n sangu&iacute;nea y el drenaje linf&aacute;tico, esto es resultado de dirigir una luz de baja potencia sobre el &aacute;rea a tratar estimulando directa y simult&aacute;neamente la dermis y la epidermis, energetizando y equilibrando las c&eacute;lulas, acelerando la regeneraci&oacute;n de los tejidos en rostro como en cuerpo. La laserterapia produce el mismo efecto que las sesiones tradicionales de acupuntura, pero evitando el dolor y molestias de las agujas. Se recomiendan para control de acn&eacute;, L&iacute;neas de expresi&oacute;n, Estr&iacute;as, Ros&aacute;cea, V&aacute;rices, Celulitis, muchos mas&hellip;.</p>  </div>
+      </div>
+    </div>
+  </div>
+  <div id="modal1" class="modal" style="width:90%;height:90%;">
+    <div class="modal-content">
+      <iframe src="https://docs.google.com/forms/d/1wqk_yEpwZYcZi9en0nolbuejDYu2aeBUcpdR1rMEUM4/viewform?embedded=true" width="100%" height="400" frameborder="0" marginheight="0" marginwidth="0" style="overflow : visible">Loading...</iframe>
+    </div>
+  </div>
+  <div id="modal2" class="modal" style="width:90%;height:90%;">
+    <div class="modal-content">
+      <div align="center">
+      <p>Este aviso de Privacidad forma parte del uso del sitio web <strong>www.kaabspa.com</strong>.</p>
+      </div>
+      <p><strong>RESPONSABLE</strong><strong><br /></strong>Kaabspa&nbsp;es una sociedad&nbsp;y estamos ubicados en D. R&iacute;o Tamazunchale 202 ,Planta Baja Local 4,Col. Del Valle,San Pedro Garza Garc&iacute;a,Nuevo Le&oacute;n, M&eacute;xico<strong>.</strong>&nbsp;Nuestro tel&eacute;fono es: <strong>(8123157088)</strong>.<br />Nuestro Responsable de Protecci&oacute;n de Datos es Katia Aranda y se ubica en el mismo domicilio, usted podr&aacute; contactarlo en el correo electr&oacute;nico:&nbsp;<a href="mailto:contacto@kaab.com">contacto@kaab.com</a>.</p>
+      <p>Una de las prioridades de Kaabspa&nbsp;es respetar la privacidad de sus usuarios y mantener segura la informaci&oacute;n y los datos personales que recolecta.</p>
+      <p>Asimismo, Kaabspa informar&aacute; al usuario qu&eacute; tipo de datos recolecta, c&oacute;mo los almacena, la finalidad del archivo, c&oacute;mo los protege, el alcance de su compromiso de confidencialidad y los derechos que &eacute;ste posee como titular de la informaci&oacute;n.</p>
+      <p><strong>DATOS PERSONALES</strong></p>
+      <p><strong></strong>En&nbsp;Kaabspa&nbsp;recogemos informaci&oacute;n desde varias &aacute;reas de nuestros sitios web. Para cada uno de estos sitios, la informaci&oacute;n que se solicita es distinta y se almacena en bases de datos separadas.<br />La informaci&oacute;n deber&aacute; ser veraz y completa. El usuario responder&aacute; en todo momento por los datos proporcionados y en ning&uacute;n caso Kaabspa &nbsp;ser&aacute; responsable de los mismos.</p>
+      <p>&nbsp;</p>
+    </div>
+  </div>
+  <footer class="page-footer orange lighten-4">
+
+    <div class="footer-copyright orange lighten-4">
+      <div class="container">
+        <div class="row">
+          <div class="col s12 m10">
+            <span class="black-text text-darken-2">KAABSPA © CONSULTA NUESTRO <a class="waves-effect waves-light  modal-trigger" href="#modal2">AVISO DE PRIVACIDAD</a> 2016 MONTERREY, MÉXICO</span>
+          </div>
+          <div class="col s12 m2">
+            <a href="https://www.facebook.com/Kaab-Spa-1708119992761315/" class="icon-block">
+              <i class="fa fa-instagram" style="font-size:24px;color:black"></i>
+            </a>
+            <a href="https://www.facebook.com/Kaab-Spa-1708119992761315/" class="icon-block">
+              <i class="fa fa-facebook-official" style="font-size:24px;color:black"></i>
+            </a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+<!--  Scripts-->
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="js/materialize.js"></script>
+<script src="js/init.js"></script>
+<script>
+$(document).ready(function(){
+  // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+  $('.modal-trigger').leanModal();
+});
+$(document).ready(function(){
+  $('.slider').slider({full_width: true});
+});
+</script>
+
+</body>
+</html>
