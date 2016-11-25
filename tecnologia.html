@@ -3,7 +3,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
-  <title>kaab</title>
+  <title>XI-KA</title>
   <link href="kaab2.jpg" rel="shortcut icon">
   <link href="kaab2.jpg" rel="apple-touch-icon-precomposed">
   <!-- CSS  -->
@@ -11,56 +11,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <script>
-  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-  n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
-  document,'script','https://connect.facebook.net/en_US/fbevents.js');
 
-  fbq('init', '1738825056400263');
-  fbq('track', "PageView");</script>
-  <noscript>
-    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1738825056400263&ev=PageView&noscript=1"/>
-  </noscript>
-
-
-
-  <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-80180015-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
-</head>
-<script src="http://maps.googleapis.com/maps/api/js"></script>
-<script>
-var myCenter=new google.maps.LatLng(25.660719, -100.364432);
-var marker;
-function initialize()
-{
-  var mapProp = {
-    center:myCenter,
-    zoom:16,
-    mapTypeId:google.maps.MapTypeId.ROADMAP
-  };
-
-  var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
-
-  var marker=new google.maps.Marker({
-    position:myCenter,
-    animation:google.maps.Animation.BOUNCE
-  });
-
-  marker.setMap(map);
-}
-
-google.maps.event.addDomListener(window, 'load', initialize);
-</script>
 <style>
 .fa.fa-facebook-official:hover {
     color: white !important;
@@ -69,7 +20,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
     color: white !important;
 }
 .fa.fa-facebook-official {
-    color: #23527c !important;
+    color: white !important;
 }
 
   .return-top .btn-floating{
@@ -77,49 +28,72 @@ google.maps.event.addDomListener(window, 'load', initialize);
   }
 
   .return-top.active .btn-floating{
-    background-color : rgb(204, 169, 137);
+    background-color :  rgb(204, 169, 137) !important;
   }
 
   .return-top .btn-floating>i{
     color : rgb(201, 203, 195);
   }
 
-  .brown-golden{
-    background-color : rgb(204, 169, 137) !important;
-  }
+.map{
+  margin-top: 6%;
+}
 
-  .button-collapse.icon{
-    color : rgb(152, 1, 46);
-  }
+.slider .indicators .indicator-item.active{
+  background-color : rgb(204, 169, 137);
+}
 
-  
+.red{
+  background-color : #FF3B25 !important;
+}
+nav{
+  position: fixed;
+  z-index: 5;
+  top:0px;
+}
+.main-container{
+
+  margin-top: 50px;
+
+}
+
+#sidenav-overlay{
+  z-index: 2;
+}
+
+.button-collapse.icon{
+  color : rgb(152, 1, 46);
+}
+
+
+
 </style>
+
 <body id="inicio" class="scrollspy">
-  <nav  class="brown-golden" role="navigation">
+  <nav  class="red" style="height:65px" role="navigation;">
     <div class="nav-wrapper container">
-      <a id="logo-container" href="./index.html" class="brand-logo"><img style="height:50px; width:100px;" src="logo.png"></></a>
+      <a id="logo-container" href="#" class="brand-logo"><img style="height:65px; width:120px; background-color: red " src="logoxika.jpg"></></a>
       <ul  class="right hide-on-med-and-down">
         <!-- <li><a href="#">Navbar Link</a></li> -->
-        <li id="menu-item-1246" class="menu-item"><a href="./index.html"><i class="fa fa-home" aria-hidden="true"></i> INICIO</a></li>
-        <li id="menu-item-1180" ><a data-beloworigin="true" class='dropdown-button' data-activates='dropdown1' href="">SERVICIOS</a>
-        </li><ul id='dropdown1' class='dropdown-content brown-golden black-text text-darken-2'>
-          <li><a class="brown-golden black-text text-darken-2" href="./facial.html">Facial</a></li>
-          <li><a class="brown-golden black-text text-darken-2" href="./spa.html">Spa</a></li>
-          <li><a class="brown-golden black-text text-darken-2" href="./corporal.html">Corporal</a></li>
-          <li><a class="brown-golden black-text text-darken-2" href="./tecnologia.html">Tecnología</a></li>
-
-        </ul>
-
-        <li id="menu-item-1181" ><a href="./index.html#we">NOSOTROS</a></li>
-        <li id="menu-item-1182" ><a href="./index.html#experience">KAAB EXPERIENCES</a></li>
-        <li id="menu-item-1183"  ><a href="./index.html#contact"><i class="fa fa-map-marker" aria-hidden="true"></i> CONTACTO</a></li>
+        <li id="menu-item-1246" class="menu-item"><a href="index.html" ><i class="fa fa-home" aria-hidden="true"></i> INICIO</a></li>
+        <li id="menu-item-1181" ><a href="./corporal.html"></i> NOSOTROS</a></li>
+        <li id="menu-item-1180" ><a href="./facial.html">SERVICIOS </a></li>
+        <li id="menu-item-1182" ><a href="#experience" >PROYECTOS</a></li>
+        <li id="menu-item-1183" ><a href="#experience" >BOLSA DE TRABAJO</a></li>
+        <li id="menu-item-1184" ><a href="./tecnologia.html" >CLIENTES</a></li>
+        <li id="menu-item-1185" ><a href="#experience" >CURR&Iacute;CULUM</a></li>
+        <li id="menu-item-1186"  ><a href="#contact" ><i class="fa fa-map-marker" aria-hidden="true"></i> CONTACTO</a></li>
       </ul>
       <ul id="nav-mobile" class="side-nav">
-        <li id="menu-item-1246" class="menu-item"><a href="./index.html">INICIO</a></li>
-        <li id="menu-item-1180" ><a href="./index.html#service" onclick="$('.button-collapse').sideNav('hide');">SERVICIOS</a></li>
-        <li id="menu-item-1181" ><a href="./index.html#we" onclick="$('.button-collapse').sideNav('hide');">NOSOTROS</a></li>
-        <li id="menu-item-1182" ><a href="./index.html#experience" onclick="$('.button-collapse').sideNav('hide');">KAAB EXPERIENCES</a></li>
-        <li id="menu-item-1183"  ><a href="./index.html#contact" onclick="$('.button-collapse').sideNav('hide');">CONTACTO</a></li>
+        <li id="menu-item-1246" class="menu-item"><a href="">INICIO</a></li>
+        <li id="menu-item-1180" ><a href="#service" onclick="$('.button-collapse').sideNav('hide');">NOSOTROS</a></li>
+        <li id="menu-item-1181" ><a href="#we"  onclick="$('.button-collapse').sideNav('hide');">SERVICIOS</a></li>
+        <li id="menu-item-1182" ><a href="#experience" onclick="$('.button-collapse').sideNav('hide');">PROYECTOS</a></li>
+        <li id="menu-item-1183"  ><a href="#contact" onclick="$('.button-collapse').sideNav('hide');">BOLSA DE TRABAJO</a></li>
+        <li id="menu-item-1183"  ><a href="./tecnologia.html" onclick="$('.button-collapse').sideNav('hide');">CLIENTES</a></li>
+        <li id="menu-item-1183"  ><a href="#contact" onclick="$('.button-collapse').sideNav('hide');">CURRICULUM</a></li>
+        <li id="menu-item-1183"  ><a href="#contact" onclick="$('.button-collapse').sideNav('hide');">CONTACTO</a></li>
+
       </ul>
       <a href="#" data-activates="nav-mobile" class="button-collapse icon"><i class="material-icons">menu</i></a>
     </div>
@@ -130,111 +104,66 @@ google.maps.event.addDomListener(window, 'load', initialize);
     <i class="material-icons">navigation</i>
   </a>
   </div>
-  <div id="index-banner" class="parallax-container ">
+
+<div class="main-container">
+  <div id="index-banner" class="parallax-container service-parallax" style="height:450px;">
     <div class="section no-pad-bot">
       <div class="container">
-        <h2 class="header center white-text condensed light">CONSENTIRTE NO ES UN LUJO</h2>
-        <div class="row center">
-          <h5 class="redheader col s12 condensed light">ES UNA NECESIDAD.</h5>
-        </div>
 
       </div>
     </div>
-    <div class="parallax"><img src="img/filter/4.jpg" alt="Unsplashed background img 1"></div>
-  </div>
+    <div class="parallax"><img src="img/1.jpg" alt="Unsplashed background img 1"></div>
+  </div><br>
   <div class="container ">
     <div class="section">
       <!--   Icon Section   -->
       <div class="row">
-        <h4 align="center">Tecnología</h4>
-          <p style="text-align:center">En nuestros servicios inclu&iacute;mos la siguiente gama con tecnolog&iacute;a&nbsp;de punta.&nbsp;</p>      </div>
-      <div class="row">
-        <div class="col s12 m6 ">
-          <p><span style="text-decoration: underline;">Cavitaci&oacute;n</span></p>
-            <p>Tratamiento est&eacute;tico que consiste en aplicar ondas ultras&oacute;nicas en determinadas zonas del cuerpo para disminuir la grasa en ellas localizadas, o los llamados &ldquo;cojines de grasa&rdquo; que con dieta o ejercicio no desaparecen. Es un m&eacute;todo de moldeo del cuerpo, no para bajar de peso, por lo que no se recomienda en personas con m&aacute;s de 15kg de sobrepeso. realizado con aparato de cavitaci&oacute;n, el cual es auxiliar para destruir las c&eacute;lulas adiposas. El resultado es una disminuci&oacute;n del &aacute;rea a tratar, piel mas lisa y firme.</p>
-            <p><span style="text-decoration: underline;">Lipolisis</span></p>
-            <p>Combina la tecnolog&iacute;a de cavitaci&oacute;n y RF para eliminar los dep&oacute;sitos de grasa al mismo tiempo que reafirma la piel. La potencia es mayor que la aplicada con la cavitaci&oacute;n normal, por lo que es necesario una valoraci&oacute;n previa para determinar si se es candidato a dicho protocolo.</p>
-            <p><span style="text-decoration: underline;">BEM </span><span style="text-decoration: underline;">Therapy</span></p>
-            <p>Esta tecnolog&iacute;a re&uacute;ne todos los beneficios que la diatermia capacitiva&nbsp; y el biolectromagnetismo como son Regeneraci&oacute;n de Tejidos e Incremento en la circulaci&oacute;n sangu&iacute;nea. A nivel celular tiene un efecto en las fibras el&aacute;sticas de la piel, principalmente al col&aacute;geno, promoviendo su regeneraci&oacute;n, elevando la turgencia de la piel, trabajando de manera progresiva la flacidez y envejecimiento cut&aacute;neo.&nbsp; Se logra con esta tecnolog&iacute;a tratar la celulitis, flacidez,&nbsp; moldeo corporal, etc.</p>
-            <p><span style="text-decoration: underline;">&nbsp;IPL </span></p>
-            <p><strong>La luz intensa pulsada</strong>&nbsp;o IPL (del ingl&eacute;s &ldquo;Intense Pulsed Light&rdquo;) elimina las huellas que los a&ntilde;os, el estr&eacute;s, y sobretodo del da&ntilde;o solar que van acumul&aacute;ndose&nbsp; en la piel, proporcionando un rejuvenecimiento global y uniforme del rostro, cuello, escote e incluso manos. Y tambi&eacute;n es utilizada en la depilaci&oacute;n permanente. El IPL es un tratamiento no agresivo que permite realizar varias sesiones sin ning&uacute;n riesgo, ayuda a disminuir o eliminar&nbsp;<strong>manchas pigmentadas, venitas o textura cut&aacute;nea rugosa</strong>&nbsp;y as&iacute; mejorar globalmente la calidad de la piel al estimular la&nbsp;<strong>formaci&oacute;n de col&aacute;geno</strong>. La energ&iacute;a de la luz act&uacute;a en las capas m&aacute;s profundas para mejorar gradualmente la tonalidad y textura de la piel, eliminar las manchas,<strong>&nbsp;rojeces, poros dilatados, arrugas finas y dar luminosidad</strong>. Los resultados son evidentes desde la primera sesi&oacute;n. Se necesitan entre 3 y 5 sesiones con un intervalo como m&iacute;nimo de tres semanas. Las mejoras se perciben de manera progresiva. En primer lugar, desaparecen las manchas y rojeces y as&iacute; la piel va recuperando un tono mucho m&aacute;s uniforme. A medida que avanza el tratamiento se va notando una mejor&iacute;a general en la calidad de la piel.</p>
-            <p><span style="text-decoration: underline;">Mesoterapia</span><span style="text-decoration: underline;"> Virtual</span></p>
-            <p>Es conocida como el milagro de la est&eacute;tica para rejuvenecer la piel, promueve nuevos canales en la dermis, rellenando arrugas, combatiendo flacidez, hidratando, tensando, disminuyendo manchas y estr&iacute;as, todo depende de la sustancia, activo o producto que se utilice durante el tratamiento. Y lo mejor, sin la molestia de las agujas y sustancias inyectables.&nbsp; Resultados inmediatos a la vista tras cada sesi&oacute;n, pero pasadas 24-48 horas observaras el resultado final. Y para obtener efectos permanentes se requiere de 6-8 sesiones, todo depender&aacute; de las condiciones iniciales.</p>
-            <p><span style="text-decoration: underline;">Microdermoabrasi&oacute;n</span></p>
-            <p>Si quieres recuperar la tersura y la suavidad de tu piel, eliminar&nbsp; y desincrustar impurezas, disminuir poros, sentir una verdadera limpieza profunda &hellip; la microdermoabrasi&oacute;n es el tratamiento que estas buscando. Consiste en una exfoliaci&oacute;n suave por una punta de diamante que barre con las c&eacute;lulas muertas o da&ntilde;adas, estimulando el crecimiento de c&eacute;lulas nuevas, y a su vez activando la circulaci&oacute;n sangu&iacute;nea y la formaci&oacute;n de fibras de col&aacute;geno ayudando a uniformar la piel. &iquest;Qu&eacute; se obtiene? Disminuye l&iacute;neas de expresi&oacute;n superficiales, secuelas de acn&eacute; &uacute; otras cicatrices, Elimina los puntos blancos, Controla la seborrea, Desaparece la sensaci&oacute;n de piel &aacute;spera o endurecida, Combate las manchas atenu&aacute;ndolas, No se requiere periodo de recuperaci&oacute;n ni cuidados especiales, por lo que puedes seguir con tu rutina sin problemas. Se recomienda una sesi&oacute;n cada 10 o 15 d&iacute;as.</p>
+        <h4 align="center">Clientes</h4><br><br>
+          <p style="text-align:center">Nuestros clientes son principalmente empresas y personas f&iacute;sicas de la iniciativa privada a quienes atendemos directamente o a trav&eacute;s de Gerencias de Proyecto.</p>
+     </div><br><br><br><br>
 
-            </div>
-        <div class="col s12 m6">
-          <p><span style="text-decoration: underline;">Presoterapia</span></p>
-          <p>Esta tecnolog&iacute;a se basa en la aplicaci&oacute;n de presi&oacute;n positiva en sentido ascendente sobre las extremidades del cuerpo en forma secuencial, cuya finalidad es estimular la circulaci&oacute;n de retorno. Esto genera un drenaje linf&aacute;tico que favorece la eliminaci&oacute;n de l&iacute;quidos, sales, grasas y toxinas, que sabemos que son la causa de celulitis. Esta terapia es totalmente relajante y no invasiva, altamente recomendada en personas con estr&eacute;s, fatiga, pesadez en extremidades y auxiliar en tratamientos est&eacute;ticos de celulitis y varices incipientes.</p>
-          <p><span style="text-decoration: underline;">Termoelectroestimulador</span></p>
-          <p>La electroestimulaci&oacute;n o gimnasia pasiva es una t&eacute;cnica que utiliza una corriente el&eacute;ctrica adecuada para causar una contracci&oacute;n muscular de manera similar a los impulsos que env&iacute;a el sistema nervioso central para controlar las acciones de los m&uacute;sculos.Termoterapia&nbsp; es la irradiaci&oacute;n de luz infrarroja aumentando la temperatura de los tejidos, provocando un gasto metab&oacute;lico, acelerando los intercambios i&oacute;nicos, favoreciendo los procesos celulares. Al combinar ambas tecnolog&iacute;as se logra una disminuci&oacute;n de los adipositos y la celulitis, siendo id&oacute;neo para reafirmar y reducir medidas.</p>
-          <p><span style="text-decoration: underline;">Laserterapia</span></p>
-          <p>Esta tecnolog&iacute;a permite estimular al metabolismo celular e incrementar la s&iacute;ntesis del col&aacute;geno, la circulaci&oacute;n sangu&iacute;nea y el drenaje linf&aacute;tico, esto es resultado de dirigir una luz de baja potencia sobre el &aacute;rea a tratar estimulando directa y simult&aacute;neamente la dermis y la epidermis, energetizando y equilibrando las c&eacute;lulas, acelerando la regeneraci&oacute;n de los tejidos en rostro como en cuerpo. La laserterapia produce el mismo efecto que las sesiones tradicionales de acupuntura, pero evitando el dolor y molestias de las agujas. Se recomiendan para control de acn&eacute;, L&iacute;neas de expresi&oacute;n, Estr&iacute;as, Ros&aacute;cea, V&aacute;rices, Celulitis, muchos mas&hellip;.</p>  </div>
-          <p><span style="text-decoration: underline;">Depilaci&oacute;n Definitiva</span></p>
-          <p>La depilaci&oacute;n permanente es una realidad con IPL (intensed pulse ligth), el cual mediante una luz intensa mata el fol&iacute;culo piloso para que dejen de producir vello.</p>
-          <p>&iquest;Cu&aacute;ntas sesiones se necesitan para eliminar el vello y como se calendarizan?</p>
-          <p>Como el vello tiene diferentes etapas de crecimiento es necesario una valoraci&oacute;n para estimar lo mas aproximado posible el numero de sesiones. Por lo que varia de una persona a otra, tambi&eacute;n influye el &aacute;rea y el color de vello. La frecuencias de las sesiones depender&aacute; del ciclo natural de crecimiento de vello de la persona, varia de entre 4 a 8 semanas entre tratamiento.</p>
-          <p>&iquest;Es doloroso el procedimiento?</p>
-          <p>Definitivamente el dolor es exponencialmente mas bajo que las depilaciones comunes con cera, se siente un ligero calor o pellizco en la zona de disparo, pero la sensaci&oacute;n var&iacute;a dependiendo del umbral del dolor.</p>
-          <p>Cuidados y recomendaciones previas y post al tratamiento</p>
-          <p>Al asolearnos nuestra piel se protege de la radiaci&oacute;n solar a trav&eacute;s de la melanina, si se realiza en este tiempo una sesi&oacute;n de fotodepilaci&oacute;n se corre el riesgo de quemar o da&ntilde;ar la piel, ya que absorber&aacute; mayor cantidad de luz, por lo que broncearse o exponerse al sol por periodos prolongados esta totalmente prohibido. Durante el periodo que se realizan las sesiones de fotodepilaci&oacute;n deber&aacute; usar religiosamente protector solar.</p>
-      </div>
     </div>
-  </div>
-  <div id="modal1" class="modal" style="width:90%;height:90%;">
-    <div class="modal-content">
-      <iframe src="https://docs.google.com/forms/d/1wqk_yEpwZYcZi9en0nolbuejDYu2aeBUcpdR1rMEUM4/viewform?embedded=true" width="100%" height="400" frameborder="0" marginheight="0" marginwidth="0" style="overflow : visible">Loading...</iframe>
-    </div>
-  </div>
-  <div id="modal2" class="modal" style="width:90%;height:90%;">
-    <div class="modal-content">
-      <div align="center">
-      <p>Este aviso de Privacidad forma parte del uso del sitio web <strong>www.kaabspa.com</strong>.</p>
-      </div>
-      <p><strong>RESPONSABLE</strong><strong><br /></strong>Kaabspa&nbsp;es una sociedad&nbsp;y estamos ubicados en D. R&iacute;o Tamazunchale 202 ,Planta Baja Local 4,Col. Del Valle,San Pedro Garza Garc&iacute;a,Nuevo Le&oacute;n, M&eacute;xico<strong>.</strong>&nbsp;Nuestro tel&eacute;fono es: <strong>(8123157088)</strong>.<br />Nuestro Responsable de Protecci&oacute;n de Datos es Katia Aranda y se ubica en el mismo domicilio, usted podr&aacute; contactarlo en el correo electr&oacute;nico:&nbsp;<a href="mailto:contacto@kaab.com">contacto@kaab.com</a>.</p>
-      <p>Una de las prioridades de Kaabspa&nbsp;es respetar la privacidad de sus usuarios y mantener segura la informaci&oacute;n y los datos personales que recolecta.</p>
-      <p>Asimismo, Kaabspa informar&aacute; al usuario qu&eacute; tipo de datos recolecta, c&oacute;mo los almacena, la finalidad del archivo, c&oacute;mo los protege, el alcance de su compromiso de confidencialidad y los derechos que &eacute;ste posee como titular de la informaci&oacute;n.</p>
-      <p><strong>DATOS PERSONALES</strong></p>
-      <p><strong></strong>En&nbsp;Kaabspa&nbsp;recogemos informaci&oacute;n desde varias &aacute;reas de nuestros sitios web. Para cada uno de estos sitios, la informaci&oacute;n que se solicita es distinta y se almacena en bases de datos separadas.<br />La informaci&oacute;n deber&aacute; ser veraz y completa. El usuario responder&aacute; en todo momento por los datos proporcionados y en ning&uacute;n caso Kaabspa &nbsp;ser&aacute; responsable de los mismos.</p>
-      <p>&nbsp;</p>
-    </div>
-  </div>
-  <footer class="page-footer brown-golden">
+    <img src="img/clientes.jpg" alt="clientes" style="width:700px; height:300px; margin-left:100px;">
+  </div><br><br><br><br><br><br><br><br>
 
-    <div class="footer-copyright brown-golden">
+
+  <footer class="page-footer red">
       <div class="container">
-        <div class="row">
-          <div class="col s12 m10">
-            <span class="black-text text-darken-2">KAABSPA © CONSULTA NUESTRO <a class="waves-effect waves-light  modal-trigger" href="#modal2"><span class="red-text text-darken-2">AVISO DE PRIVACIDAD</span></a> 2016 MONTERREY, MÉXICO</span>
-          </div>
-          <div class="col s12 m2">
-            <a href="https://www.instagram.com/kaabspa.mty/" target="_blank" class="icon-block">
-              <i class="fa fa-instagram" style="font-size:24px;color:black"></i>
-            </a>
-            <a href="https://www.facebook.com/Kaab-Spa-1708119992761315/" target="_blank" class="icon-block">
-              <i class="fa fa-facebook-official" style="font-size:24px;color:black"></i>
-            </a>
-
-          </div>
-        </div>
-      </div>
+            <div class="black-text text-darken-2">XI-KA DESARROLLOS | PROYECTOS | SERVICIOS @ MONTERREY | NL | 2016 | TODOS LOS DERECHOS RESERVADOS </div>
     </div>
   </footer>
+</div>
+
+      <!--  Scripts-->
+      <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script src="js/materialize.js"></script>
+      <script src="js/init.js"></script>
+      <script>
+      $(document).ready(function(){
+        // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+        $('.modal-trigger').leanModal();
+        $('.scrollspy').scrollSpy();
+        $('.slider').slider({full_width: true});
+        $('.parallax').parallax();
 
 
-<!--  Scripts-->
-<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-<script src="js/materialize.js"></script>
-<script src="js/init.js"></script>
-<script>
-$(document).ready(function(){
-  // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
-  $('.modal-trigger').leanModal();
-  $('.scrollspy').scrollSpy();
-  $('.slider').slider({full_width: true});
-});
-</script>
+        ///scrollfire
 
-</body>
-</html>
+        var options = [
+          /*{
+            selector: '#we', offset: 0, callback: function() {
+              Materialize.toast("Te la comes", 1500 );
+            }
+          }*/
+          {
+
+          }
+        ]
+
+        Materialize.scrollFire(options);
+
+      });
+      </script>
+
+    </body>
+    </html>

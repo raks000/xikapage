@@ -1,0 +1,60 @@
+<div class="content">
+
+<div id="hs_container" class="hs_container">
+
+<div class="hs_area hs_area1" id="a1">
+		<img class="hs_visible" width="150" height="300px" src="img/NIC/n1.jpg" alt="" style="top: 0px; display: none; z-index: 1;">
+		<img src="img/NIC/n2.jpg" width="150" height="300px" alt="" style="display: none; z-index: 1; left: 0px;">
+		<img src="img/NIC/n3.jpg" width="150" height="300px" alt="" style="display: inline; z-index: 9999;">
+</div>
+<div class="hs_area hs_area2" id="a2">
+		<img class="hs_visible" width="150" height="150px" src="img/ACH/ach1.jpg" alt="" style="top: 0px; display: block; z-index: 9999;">
+		<img src="img/ACH/ach2.jpg" width="150" height="150px" alt="" style="display: none; z-index: 1; top: 0px; opacity: 1;">
+		<img src="img/ACH/ach3.jpg" width="150" height="150px" alt="" style="display: none; z-index: 1; left: 0px;">
+</div>
+<div class="hs_area hs_area3" id="a3">
+		<img class="hs_visible" width="150" height="150px" src="img/MC/mc1.jpg" alt="" style="left: 0px; opacity: 1; display: block; z-index: 9999;">
+		<img src="img/MC/mc2.jpg" width="150" height="150px" alt="" style="display: none; z-index: 1; top: 0px;">
+		<img src="img/MC/mc3.jpg" width="150" height="150px" alt="" style="display: none; z-index: 1; top: 0px; opacity: 1;">
+</div>
+
+<div class="hs_area hs_area1x" id="a1x">
+    <img class="hs_visible" src="img/HL/hl1.jpg" width="150" height="300px" alt="" style="top: 0px; opacity: 1; display: none; z-index: 1; left: 0px;">
+    <img src="img/HL/hl2.jpg" width="150" height="300px" alt="" style="display: block; z-index: 9999; left: 0px; opacity: 1; top: 0px;">
+		<img src="img/HL/hl3.jpg" width="150" height="300px" alt="" style="display: none; z-index: 1; left: 0px; opacity: 1; top: 0px;">
+</div>
+
+<div class="hs_area hs_area2x" id="a2x">
+		<img class="hs_visible" width="150" height="150px" src="img/AT/at1.jpg" alt="" style="left: 0px; display: block; z-index: 9999; opacity: 1; top: 0px;">
+		<img src="img/AT/at2.jpg" width="150" height="150px" alt="" style="display: none; z-index: 1; left: 0px; top: 0px; opacity: 1;">
+		<img src="img/AT/at3.jpg" width="150" height="150px" alt="" style="display: none; z-index: 1; left: 0px; opacity: 1; top: 0px;">
+</div>
+<div class="hs_area hs_area3x" id="a3x">
+		<img class="hs_visible" width="150" height="150px" src="img/A/a1.jpg" alt="" style="top: 0px; opacity: 1; display: none; z-index: 1; left: 0px;">
+		<img src="img/A/a2.jpg" width="150" height="150px" alt="" style="display: none; z-index: 1; left: 0px; top: 0px; opacity: 1;">
+		<img src="img/A/a3.jpg" width="150" height="150px" alt="" style="display: block; z-index: 9999; top: 0px; opacity: 1; left: 0px;">
+</div>
+
+
+
+<div class="hs_area hs_area1xa" id="a1xa">
+		<img class="hs_visible" width="150" height="300px" src="img/TE/te1.jpg" alt="" style="top: 0px; display: none; z-index: 1;">
+		<img src="img/TE/te2.jpg" width="150" height="300px" alt="" style="display: none; z-index: 1; left: 0px;">
+		<img src="img/TE/te3.jpg" width="150" height="300px" alt="" style="display: inline; z-index: 9999;">
+</div>
+
+<div class="hs_area hs_area2xa" id="a2xa">
+		<img class="hs_visible" width="150" height="150px" src="img/SS/ss1.jpg" alt="" style="left: 0px; opacity: 1; display: none; z-index: 1;">
+		<img src="img/SS/ss2.jpg" width="150" height="150px" alt="" style="display: none; z-index: 1; left: 0px; opacity: 1;">
+    <img src="img/SS/ss3.jpg" width="150" height="150px" alt="" style="display: inline; z-index: 9999;">
+</div>
+
+<div class="hs_area hs_area3xa" id="a3xa">
+	 	<img class="hs_visible" width="150" height="150px" src="img/RV/rv1.jpg" alt="">
+	  	<img src="img/RV/rv2.jpg" width="150" height="150px" alt="">
+	  	<img src="img/RV/rv3.jpg" width="150" height="150px" alt="">
+</div>
+
+</div>
+
+</div>

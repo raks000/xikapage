@@ -1,0 +1,36 @@
+/**
+* GK Image Show - CSS style
+* @package Joomla!
+* @Copyright (C) 2009-2011 Gavick.com
+* @ All rights reserved
+* @ Joomla! is Free Software
+* @ Released under GNU/GPL License : http://www.gnu.org/copyleft/gpl.html
+* @ version $Revision: GK4 1.0 $
+**/
+
+.gkIsWrapper-gk_boutique { position:relative; width:100%; overflow:hidden; }
+.gkIsWrapper-gk_boutique .gkIsSlides { position:relative; overflow:hidden; }
+.gkIsWrapper-gk_boutique .gkIsSlide { position:absolute; left: 0; visibility: hidden; }
+.gkIsWrapper-gk_boutique .gkIsSlide:first-child { visibility: visible; }
+.slide-links .gkIsSlide { cursor:pointer; }
+.gkIsWrapper-gk_boutique .gkIsImage { overflow:hidden; position: relative; width: 100%; }
+.gkIsWrapper-gk_boutique .gkIsTextData { display:none; }
+.gkIsWrapper-gk_boutique .gkIsPreloader { position:absolute; z-index:128; top:0; left:0; background:#000 url('images/loader.gif') no-repeat center center; width:100%; height:100%; text-indent:-999em; }
+
+
+.gkIsWrapper-gk_boutique .gkIsText { height: auto; bottom: 140px; position: absolute; float: left; left:30px; z-index: 127; }
+.gkIsWrapper-gk_boutique .gkIsTextWrap { position: relative; padding-right: 90px; }
+.gkIsWrapper-gk_boutique .gkIsTimeline { background: transparent; height:2px; margin: 0; width: 100%; clear: both; position: absolute; bottom: 0px; z-index: 127; }
+.gkIsWrapper-gk_boutique .gkIsProgress { float: left; text-indent: -999em; width: 0; height: 2px; background: #e9403b; margin-left: -12px; }
+.gkIsWrapper-gk_boutique .gkIsTextTitle { float: left; padding: 10px 30px 4px 30px; color: #fff!important; line-height:16px; }
+.gkIsWrapper-gk_boutique .gkIsTextTitle a { color: #fff; font-size: 16px; float: left; display: block; text-decoration: none; font-family:'Titillium Maps',Arial; }
+.gkIsWrapper-gk_boutique .gkIsTextTitle small { font-size: 18px; color: #fff!important; }
+.gkIsWrapper-gk_boutique .gkIsTextTitle big { font-size: 50px; color: #e9403b; }
+.gkIsWrapper-gk_boutique .gkIsTextTitle a:hover { text-decoration: none; }
+.gkIsWrapper-gk_boutique .gkIsInterface {width: 100%; height: 32px;  position: absolute; right: 0; bottom: 130; z-index: 127; top:130px }
+.gkIsWrapper-gk_boutique .gkIsPrev,
+.gkIsWrapper-gk_boutique .gkIsNext { width: 20px; height: 24px; background: #000000 url('images/gk_is_interface.png') no-repeat 0 0; margin: 0px;text-indent: -999em; float: left;  }
+.gkIsWrapper-gk_boutique .gkIsPrev { background-position: 5px 0; }
+.gkIsWrapper-gk_boutique .gkIsNext { background-position: -10px 0; float:right}
+.gkIsWrapper-gk_boutique .gkIsPrev:hover { background-position: 5px -24px; cursor: pointer; }
+.gkIsWrapper-gk_boutique .gkIsNext:hover { background-position: -10px -24px; cursor: pointer; }

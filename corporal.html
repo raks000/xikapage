@@ -3,7 +3,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
-  <title>kaab</title>
+  <title>XI-KA</title>
   <link href="kaab2.jpg" rel="shortcut icon">
   <link href="kaab2.jpg" rel="apple-touch-icon-precomposed">
   <link rel='stylesheet' id='vendor-mental-css'  href='wp-content/themes/mental/assets/css/animate.css' media='all' />
@@ -12,56 +12,9 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <script>
-  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-  n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
-  document,'script','https://connect.facebook.net/en_US/fbevents.js');
-
-  fbq('init', '1738825056400263');
-  fbq('track', "PageView");</script>
-  <noscript>
-    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1738825056400263&ev=PageView&noscript=1"/>
-  </noscript>
-
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-    ga('create', 'UA-80180015-1', 'auto');
-    ga('send', 'pageview');
-
-  </script>
-
 
 </head>
-<script src="http://maps.googleapis.com/maps/api/js"></script>
-<script>
-var myCenter=new google.maps.LatLng(25.660719, -100.364432);
-var marker;
-function initialize()
-{
-  var mapProp = {
-    center:myCenter,
-    zoom:16,
-    mapTypeId:google.maps.MapTypeId.ROADMAP
-  };
 
-  var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
-
-  var marker=new google.maps.Marker({
-    position:myCenter,
-    animation:google.maps.Animation.BOUNCE
-  });
-
-  marker.setMap(map);
-}
-
-google.maps.event.addDomListener(window, 'load', initialize);
-</script>
 <style>
 .fa.fa-facebook-official:hover {
     color: white !important;
@@ -89,8 +42,8 @@ google.maps.event.addDomListener(window, 'load', initialize);
     padding: 10px;
   }
 
-  .brown-golden{
-    background-color : rgb(204, 169, 137) !important;
+  .red{
+    background-color : #FF3B25 !important;
   }
 
   .button-collapse.icon{
@@ -99,31 +52,31 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
 </style>
 <body id="inicio" class="scrollspy">
-  <nav  class="brown-golden" role="navigation">
+  <nav  class="red" style="height:65px" role="navigation">
     <div class="nav-wrapper container">
-      <a id="logo-container" href="./index.html" class="brand-logo"><img style="height:50px; width:100px;" src="logo.png"></></a>
+      <a id="logo-container" href="./index.html" class="brand-logo"><img style="height:65px; width:120px;" src="logoxika.jpg"></></a>
       <ul  class="right hide-on-med-and-down">
         <!-- <li><a href="#">Navbar Link</a></li> -->
-        <li id="menu-item-1246" class="menu-item"><a href="./index.html"><i class="fa fa-home" aria-hidden="true"></i> INICIO</a></li>
-        <li id="menu-item-1180" ><a data-beloworigin="true" class='dropdown-button' data-activates='dropdown1' href="">SERVICIOS</a>
-        </li><ul id='dropdown1' class='dropdown-content brown-golden black-text text-darken-2'>
-          <li><a class="brown-golden black-text text-darken-2" href="./facial.html">Facial</a></li>
-          <li><a class="brown-golden black-text text-darken-2" href="./spa.html">Spa</a></li>
-          <li><a class="brown-golden black-text text-darken-2" href="./corporal.html">Corporal</a></li>
-          <li><a class="brown-golden black-text text-darken-2" href="./tecnologia.html">Tecnología</a></li>
-
-        </ul>
-
-        <li id="menu-item-1181" ><a href="./index.html#we" >NOSOTROS</a></li>
-        <li id="menu-item-1182" ><a href="./index.html#experience" >KAAB EXPERIENCES</a></li>
-        <li id="menu-item-1183"  ><a href="./index.html#contact" ><i class="fa fa-map-marker" aria-hidden="true"></i> CONTACTO</a></li>
+        <li id="menu-item-1246" class="menu-item"><a href="index.html" ><i class="fa fa-home" aria-hidden="true"></i> INICIO</a></li>
+        <li id="menu-item-1181" ><a href="./corporal.html"></i> NOSOTROS</a></li>
+        <li id="menu-item-1180" ><a href="./facial.html">SERVICIOS </a></li>
+        <li id="menu-item-1182" ><a href="#experience" >PROYECTOS</a></li>
+        <li id="menu-item-1183" ><a href="#experience" >BOLSA DE TRABAJO</a></li>
+        <li id="menu-item-1184" ><a href="./tecnologia.html" >CLIENTES</a></li>
+        <li id="menu-item-1185" ><a href="#experience" >CURR&Iacute;CULUM</a></li>
+        <li id="menu-item-1186"  ><a href="#contact" ><i class="fa fa-map-marker" aria-hidden="true"></i> CONTACTO</a></li>
       </ul>
+
       <ul id="nav-mobile" class="side-nav">
-        <li id="menu-item-1246" class="menu-item"><a href="./index.html" >INICIO</a></li>
-        <li id="menu-item-1180" ><a href="./index.html#service" onclick="$('.button-collapse').sideNav('hide');">SERVICIOS</a></li>
-        <li id="menu-item-1181" ><a href="./index.html#we" onclick="$('.button-collapse').sideNav('hide');">NOSOTROS</a></li>
-        <li id="menu-item-1182" ><a href="./index.html#experience" onclick="$('.button-collapse').sideNav('hide');">KAAB EXPERIENCES</a></li>
-        <li id="menu-item-1183" ><a href="./index.html#contact" onclick="$('.button-collapse').sideNav('hide');">CONTACTO</a></li>
+        <li id="menu-item-1246" class="menu-item"><a href="">INICIO</a></li>
+        <li id="menu-item-1180" ><a href="#service" onclick="$('.button-collapse').sideNav('hide');">NOSOTROS</a></li>
+        <li id="menu-item-1181" ><a href="#we"  onclick="$('.button-collapse').sideNav('hide');">SERVICIOS</a></li>
+        <li id="menu-item-1182" ><a href="#experience" onclick="$('.button-collapse').sideNav('hide');">PROYECTOS</a></li>
+        <li id="menu-item-1183"  ><a href="#contact" onclick="$('.button-collapse').sideNav('hide');">BOLSA DE TRABAJO</a></li>
+        <li id="menu-item-1183"  ><a href="./tecnologia.html" onclick="$('.button-collapse').sideNav('hide');">CLIENTES</a></li>
+        <li id="menu-item-1183"  ><a href="#contact" onclick="$('.button-collapse').sideNav('hide');">CURRICULUM</a></li>
+        <li id="menu-item-1183"  ><a href="#contact" onclick="$('.button-collapse').sideNav('hide');">CONTACTO</a></li>
+
       </ul>
       <a href="#" data-activates="nav-mobile" class="button-collapse icon"><i class="material-icons">menu</i></a>
     </div>
@@ -136,93 +89,95 @@ google.maps.event.addDomListener(window, 'load', initialize);
   </div>
 
   <div id="index-banner" class="parallax-container ">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <h2 class="header center white-text condensed light">CONSENTIRTE NO ES UN LUJO</h2>
-        <div class="row center">
-          <h5 class="redheader col s12 condensed light">ES UNA NECESIDAD.</h5>
-        </div>
-
-      </div>
-    </div>
-    <div class="parallax"><img src="img/filter/3.jpg" alt="Unsplashed background img 1"></div>
-  </div>
+    <div class="parallax"><img src="img/Nosotros1.jpg" alt="Unsplashed background img 1"></div>
+  </div><br><br>
   <div class="container ">
     <div class="section">
       <!--   Icon Section   -->
       <div class="row">
-        <h4 align="center"> <span class="">Corporal</span></h4>
-        <p>Los protocolos de servicios proporcionados en el &aacute;rea de corporal son previa valoraci&oacute;n, se determina aparatolog&iacute;a, plan de seguimiento y frecuencia. Contamos con masajes (relajantes, des-contracturantes, reductivos, linf&aacute;ticos, etc)&nbsp; con protocolos para combatir sobrepeso, flacidez, estr&iacute;as, celulitis, acn&eacute;, modelado sin bisturi y depilaci&oacute;n definitiva.</p>
-      </div>
+        <h4 align="center"> <span class="">Nosotros</span></h4><br><br><br><br>
+        <p>XI-KA DESARROLLOS PROYECTOS Y SERVICIOS, S.A. DE C.V., es una empresa constructora y desarrolladora de proyectos inmobiliarios.
+          Dentro de sus principales servicios a ofrecer se encuentran: el diseño arquitectónico, elaboraci&oacute;n de ingenier&iacute;as , an&aacute;lisis tanto de costos
+          de obra como de volumetr&iacute;as, y la construcci&oacute;n de proyectos, ya sea de car&aacute;cter habitacional, comercial, industrial y de servicios.</p>
+      </div><br><br>
       <div class="row">
         <div class="col s12 m6 ">
-          <p><span style="text-decoration: underline;">Reducci&oacute;n de Estr&iacute;as</span></p>
-          <p>Procedimiento que se realiza aplicando productos especiales mediante masajes que ayudan a disminuir el grosor de la estr&iacute;as as&iacute; como uniformar el color.</p>
-          <p><span style="text-decoration: underline;">Blanqueamiento de Axila, codos o rodillas</span></p>
-          <p>Mediante la aplicaci&oacute;n de productos espec&iacute;ficos se logra hacer una exfoliaci&oacute;n del &aacute;rea logrando recuperar el color natural de la zona.</p>
+          <p><span style="text-decoration: underline;">Historia</span></p>
+          <p>La historia naci&oacute; del sueño de tres profesionales que juntos sumaban 40 años de experiencia y decidieron fundar una empresa constructora que proporcionara a sus clientes
+            un servicio integral desde cuestiones legales del mismo giro, asi como diseño y construcci&oacute;n de inmuebles. Tal como la palabra Mixteca XI-KA que significa “en movimiento”,
+            la empresa procura constantemente tener un dinamismo de sus recursos y sus colaboradores a favor de la construcci&oacute;n</p>
+
+          <p><span style="text-decoration: underline;">Nuestra Misi&oacute;n</span></p>
+          <p>XI-KA es una empresa dedicada a la construcci&oacute;n y desarrollos inmobiliarios, cuyo objetivo es satisfacer las necesidades de nuestros clientes, esto con la ejecución de obras y
+            proyectos que den plusval&iacute;a a sus inversiones.</p
+
+          <p><span style="text-decoration: underline;">Nuestra Visi&oacute;n</span></p>
+          <p>Ser una empresa líder en ramo de la construcci&oacute;n, innovadora, en constante evoluci&oacute;n, generadora de proyectos inmobiliarios sustentables con el medio ambiente..</p>
+
+          <p><span style="text-decoration: underline;">Valores</span></p>
+          <p>Son parte fundamental de nuestra organizaci&oacute;n, ya que, gracias a &eacute;stos, nuestros actuar un sustento &eacute;tico lo que conllevar&aacute; a que cada una de nuestras actividad tenga un valor agregado.
+          Los valores que rigen a nuestra empresa son:</p>
+
         </div>
         <div class="col s12 m6">
-          <p><span style="text-decoration: underline;">Velo </span><span style="text-decoration: underline;">de Novia</span></p>
-          <p>Tratamiento corporal profundo que combina diferentes t&eacute;cnicas para ayudar al cuerpo a eliminar el estr&eacute;s e hidratarlo, obteniendo una piel brillante, desintoxicada y lista para presumir. Todo se logra a trav&eacute;s de masaje, exfoliaci&oacute;n profunda y una envoltura corporal nutritiva. Altamente recomendado para personas con vacaciones en la playa y para novias pr&oacute;ximas a casarse o con eventos importantes.</p>
-          <p><span style="text-decoration: underline;">Limpieza profunda de espalda</span></p>
-          <p>Recomendado para personas que padecen o padecieron acn&eacute; en el &aacute;rea de espalda y hombros, realiz&aacute;ndose un limpieza y extracci&oacute;n de comedones y aplic&aacute;ndose productos que promueven la eliminaci&oacute;n de la bacteria del acn&eacute;, utiliz&aacute;ndose como agente bactericida el Laser.</p>
+
+          <p><span style="text-decoration: underline;">Honestidad</span></p>
+          <p>Buscamos en todo momento que las relaciones, tanto internas, como con nuestros clientes, sean transparentes. Estamos conscientes que este valor generar&aacute; un buen ambiente de trabajo, as&iacute; como la confianza de parte
+            de nuestros clientes, que nos est&aacute;n confiando parte de su patrimonio.</p>
+
+          <p><span style="text-decoration: underline;">Profesionalismo</span></p>
+          <p>Todo el personal que colabora en XI-KA son profesionales aprobados, con alta experiencia en el ramo, lo que nos permite aportar un alto valor agregado a nuestra toma de decisiones y a nuestros servicios.</p>
+
+          <p><span style="text-decoration: underline;">Respeto</span></p>
+          <p>El respeto es parte fundamental de nuestra organizaci&oacute;n, ya que nos permite reconocer, apreciar y valorar las cualidades de cada uno de nuestros colaboradores.</p>
+
+          <p><span style="text-decoration: underline;">Lealtad</span></p>
+          <p>En XI-KA entendemos la lealtad como la fidelidad al compromiso de defender lo que creemos. Consideramos este valor como una llave que nos permite tener un aut&eacute;ntico &eacute;xito con nuestros clientes, ya que genera la confianza,
+            de que en todo momento, buscaremos que su inversi&oacute;n sea rentable.</p>
+
         </div>
       </div>
     </div>
-  </div>
-  <div id="modal1" class="modal" style="width:90%;height:90%;">
-    <div class="modal-content">
-      <iframe src="https://docs.google.com/forms/d/1wqk_yEpwZYcZi9en0nolbuejDYu2aeBUcpdR1rMEUM4/viewform?embedded=true" width="100%" height="400" frameborder="0" marginheight="0" marginwidth="0" style="overflow : visible">Loading...</iframe>
-    </div>
-  </div>
-  <div id="modal2" class="modal" style="width:90%;height:90%;">
-    <div class="modal-content">
-      <div align="center">
-      <p>Este aviso de Privacidad forma parte del uso del sitio web <strong>www.kaabspa.com</strong>.</p>
-      </div>
-      <p><strong>RESPONSABLE</strong><strong><br /></strong>Kaabspa&nbsp;es una sociedad&nbsp;y estamos ubicados en D. R&iacute;o Tamazunchale 202 ,Planta Baja Local 4,Col. Del Valle,San Pedro Garza Garc&iacute;a,Nuevo Le&oacute;n, M&eacute;xico<strong>.</strong>&nbsp;Nuestro tel&eacute;fono es: <strong>(8123157088)</strong>.<br />Nuestro Responsable de Protecci&oacute;n de Datos es Katia Aranda y se ubica en el mismo domicilio, usted podr&aacute; contactarlo en el correo electr&oacute;nico:&nbsp;<a href="mailto:contacto@kaab.com">contacto@kaab.com</a>.</p>
-      <p>Una de las prioridades de Kaabspa&nbsp;es respetar la privacidad de sus usuarios y mantener segura la informaci&oacute;n y los datos personales que recolecta.</p>
-      <p>Asimismo, Kaabspa informar&aacute; al usuario qu&eacute; tipo de datos recolecta, c&oacute;mo los almacena, la finalidad del archivo, c&oacute;mo los protege, el alcance de su compromiso de confidencialidad y los derechos que &eacute;ste posee como titular de la informaci&oacute;n.</p>
-      <p><strong>DATOS PERSONALES</strong></p>
-      <p><strong></strong>En&nbsp;Kaabspa&nbsp;recogemos informaci&oacute;n desde varias &aacute;reas de nuestros sitios web. Para cada uno de estos sitios, la informaci&oacute;n que se solicita es distinta y se almacena en bases de datos separadas.<br />La informaci&oacute;n deber&aacute; ser veraz y completa. El usuario responder&aacute; en todo momento por los datos proporcionados y en ning&uacute;n caso Kaabspa &nbsp;ser&aacute; responsable de los mismos.</p>
-      <p>&nbsp;</p>
-    </div>
-  </div>
-  <footer class="page-footer brown-golden">
+  </div><br><br><br><br>
 
-    <div class="footer-copyright brown-golden">
+
+  <footer class="page-footer red">
       <div class="container">
-        <div class="row">
-          <div class="col s12 m10">
-            <span class="black-text text-darken-2">KAABSPA © CONSULTA NUESTRO <a class="waves-effect waves-light  modal-trigger" href="#modal2"><span class="red-text text-darken-2">AVISO DE PRIVACIDAD</span></a> 2016 MONTERREY, MÉXICO</span>
-          </div>
-          <div class="col s12 m2">
-            <a href="https://www.instagram.com/kaabspa.mty/" target="_blank" class="icon-block">
-              <i class="fa fa-instagram" style="font-size:24px;color:black"></i>
-            </a>
-            <a href="https://www.facebook.com/Kaab-Spa-1708119992761315/" target="_blank" class="icon-block">
-              <i class="fa fa-facebook-official" style="font-size:24px;color:black"></i>
-            </a>
-
-          </div>
-        </div>
-      </div>
+            <div class="black-text text-darken-2">XI-KA DESARROLLOS | PROYECTOS | SERVICIOS @ MONTERREY | NL | 2016 | TODOS LOS DERECHOS RESERVADOS </div>
     </div>
   </footer>
+</div>
+
+      <!--  Scripts-->
+      <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script src="js/materialize.js"></script>
+      <script src="js/init.js"></script>
+      <script>
+      $(document).ready(function(){
+        // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+        $('.modal-trigger').leanModal();
+        $('.scrollspy').scrollSpy();
+        $('.slider').slider({full_width: true});
+        $('.parallax').parallax();
 
 
-<!--  Scripts-->
-<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-<script src="js/materialize.js"></script>
-<script src="js/init.js"></script>
-<script>
-  $(document).ready(function(){
-    $('.scrollspy').scrollSpy();
-    // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
-    $('.modal-trigger').leanModal();
-    $('.slider').slider({full_width: true});
-  });
-</script>
+        ///scrollfire
 
-</body>
-</html>
+        var options = [
+          /*{
+            selector: '#we', offset: 0, callback: function() {
+              Materialize.toast("Te la comes", 1500 );
+            }
+          }*/
+          {
+
+          }
+        ]
+
+        Materialize.scrollFire(options);
+
+      });
+      </script>
+
+    </body>
+    </html>

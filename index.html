@@ -3,7 +3,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
-  <title>kaab</title>
+  <title>XI-KA</title>
   <link href="kaab2.jpg" rel="shortcut icon">
   <link href="kaab2.jpg" rel="apple-touch-icon-precomposed">
   <!-- CSS  -->
@@ -44,52 +44,11 @@
 
 </head>
 
-<script>
-var myCenter=new google.maps.LatLng(25.660719, -100.364432);
-var marker;
-
-function initialize()
-{
-  var mapProp = {
-    center:myCenter,
-    zoom:16,
-    mapTypeId:google.maps.MapTypeId.ROADMAP
-  };
-
-  var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
-
-  var marker=new google.maps.Marker({
-    position:myCenter,
-    animation:google.maps.Animation.BOUNCE
-  });
-
-  marker.setMap(map);
-}
-
-google.maps.event.addDomListener(window, 'load', initialize);
-</script>
 <style>
-.fa.fa-facebook-official:hover {
-    color: white !important;
-}
-.fa.fa-instagram:hover {
-    color: white !important;
-}
-.fa.fa-facebook-official {
-    color: #23527c !important;
-}
 
-  .schedule-btn{
-    margin-bottom : 3%;
-    margin-top : 3%;
-  }
-
-  .schedule-btn.fixed{
-    position : fixed;
-    bottom: 45px;
-    left: 24px;
-    z-index: 3;
-  }
+.brand-logo{
+  color: white;
+}
 
   .return-top .btn-floating{
     background-color : rgb(255, 255, 255);
@@ -111,8 +70,8 @@ google.maps.event.addDomListener(window, 'load', initialize);
   background-color : rgb(204, 169, 137);
 }
 
-.brown-golden{
-  background-color : rgb(204, 169, 137) !important;
+.red{
+  background-color : #FF3B25 !important;
 }
 nav{
   position: fixed;
@@ -133,34 +92,48 @@ nav{
   color : rgb(152, 1, 46);
 }
 
+.content {
+    width: 980px;
+    padding: 20px 20px 0px 20px;
+    position: relative;
+    background: url(images/proyectos.jpg) top left #FFFFFF;
+    height: 360px;}
+
+.hs_container {
+        position: relative;
+        width: 960px;
+        height: 300px;
+        overflow: hidden;
+        clear: both;
+        cursor: pointer;
+    }
+
 </style>
 <body id="inicio" class="scrollspy">
-  <nav  class="brown-golden" role="navigation">
+  <nav  class="red" style="height:65px" role="navigation;">
     <div class="nav-wrapper container">
-      <a id="logo-container" href="#" class="brand-logo"><img style="height:50px; width:120px; background-color: rgb(204, 169, 137)" src="logo.png"></></a>
+      <a id="logo-container" href="#" class="brand-logo"><img style="height:65px; width:120px;" src="logoxika.jpg"></></a>
       <ul  class="right hide-on-med-and-down">
         <!-- <li><a href="#">Navbar Link</a></li> -->
         <li id="menu-item-1246" class="menu-item"><a href="index.html" ><i class="fa fa-home" aria-hidden="true"></i> INICIO</a></li>
-        <li id="menu-item-1180" ><a data-beloworigin="true" class='dropdown-button' data-activates='dropdown1' href="">SERVICIOS </a>
-        </li>
-        <ul id='dropdown1' class='dropdown-content brown-golden black-text text-darken-2'>
-          <li><a class="brown-golden black-text text-darken-2" href="./facial.html">Facial</a></li>
-          <li><a class="brown-golden black-text text-darken-2" href="./spa.html">Spa</a></li>
-          <li><a class="brown-golden black-text text-darken-2" href="./corporal.html">Corporal</a></li>
-          <li><a class="brown-golden black-text text-darken-2" href="./tecnologia.html">Tecnología</a></li>
-
-        </ul>
-
-        <li id="menu-item-1181" ><a href="#we"></i> NOSOTROS</a></li>
-        <li id="menu-item-1182" ><a href="#experience" >KAAB EXPERIENCES</a></li>
-        <li id="menu-item-1183"  ><a href="#contact" ><i class="fa fa-map-marker" aria-hidden="true"></i> CONTACTO</a></li>
+        <li id="menu-item-1181" ><a href="./corporal.html"></i> NOSOTROS</a></li>
+        <li id="menu-item-1180" ><a href="./facial.html">SERVICIOS </a></li>
+        <li id="menu-item-1182" ><a href="#experience" >PROYECTOS</a></li>
+        <li id="menu-item-1183" ><a href="#experience" >BOLSA DE TRABAJO</a></li>
+        <li id="menu-item-1184" ><a href="./tecnologia.html" >CLIENTES</a></li>
+        <li id="menu-item-1185" ><a href="#experience" >CURR&Iacute;CULUM</a></li>
+        <li id="menu-item-1186"  ><a href="#contact" ><i class="fa fa-map-marker" aria-hidden="true"></i> CONTACTO</a></li>
       </ul>
       <ul id="nav-mobile" class="side-nav">
         <li id="menu-item-1246" class="menu-item"><a href="">INICIO</a></li>
-        <li id="menu-item-1180" ><a href="#service" onclick="$('.button-collapse').sideNav('hide');">SERVICIOS</a></li>
-        <li id="menu-item-1181" ><a href="#we"  onclick="$('.button-collapse').sideNav('hide');">NOSOTROS</a></li>
-        <li id="menu-item-1182" ><a href="#experience" onclick="$('.button-collapse').sideNav('hide');">KAAB EXPERIENCES</a></li>
+        <li id="menu-item-1180" ><a href="./corporal.html" onclick="$('.button-collapse').sideNav('hide');">NOSOTROS</a></li>
+        <li id="menu-item-1181" ><a href="#we"  onclick="$('.button-collapse').sideNav('hide');">SERVICIOS</a></li>
+        <li id="menu-item-1182" ><a href="#experience" onclick="$('.button-collapse').sideNav('hide');">PROYECTOS</a></li>
+        <li id="menu-item-1183"  ><a href="#contact" onclick="$('.button-collapse').sideNav('hide');">BOLSA DE TRABAJO</a></li>
+        <li id="menu-item-1183"  ><a href="./tecnologia.html" onclick="$('.button-collapse').sideNav('hide');">CLIENTES</a></li>
+        <li id="menu-item-1183"  ><a href="#contact" onclick="$('.button-collapse').sideNav('hide');">CURRICULUM</a></li>
         <li id="menu-item-1183"  ><a href="#contact" onclick="$('.button-collapse').sideNav('hide');">CONTACTO</a></li>
+
       </ul>
       <a href="#" data-activates="nav-mobile" class="button-collapse icon"><i class="material-icons">menu</i></a>
     </div>
@@ -172,167 +145,89 @@ nav{
   </a>
   </div>
 
-  <a class="schedule-btn fixed brown-golden black-waves-effect waves-light btn modal-trigger" href="#modal1"> <span class="black-text text-darken-2">Agendar Cita</span></a>
 <div class="main-container">
   <div id="index-banner" class="parallax-container service-parallax" style="height:650px;">
     <div class="section no-pad-bot">
       <div class="container">
-        <h2 class="header center white-text condensed light">CONSENTIRTE NO ES UN LUJO</h2>
+        <h2 class="header center white-text condensed light" style="padding-top:50px;">TRANSFORMAMOS EL SERVICIO QUE EL CONSTRUCTOR PROPORCIONA.</h2>
         <div class="row center">
-          <h5 class="redheader col s12 condensed light">ES UNA NECESIDAD.</h5>
         </div>
 
       </div>
     </div>
-    <div class="parallax"><img src="img/prueba2.jpg" alt="Unsplashed background img 1"></div>
-  </div>
+    <div class="parallax"><img src="img/banner2.jpg" alt="Unsplashed background img 1"></div>
+  </div><br><br>
 
-  <div id="service" class="container scrollspy" >
-    <div class="section">
-      <div class="row" align="center">
-        <h3> <span style="padding: 10px 20px;color:#fffff;" class="z-depth-5"> Servicios </span></h3>
-      </div>
-      <div class="row">
-        <div class="col s12 m3">
-          <div class="card card-large z-depth-5">
-            <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator" src="img/FAN1002964.jpg">
+      <div id="service" class="container scrollspy">
+          <div class="section">
+            <div class="row" align="center">
+              <h3> <span style="padding: 10px 20px;color:#fffff;" class="z-depth-5"> Proyectos </span></h3><br><br><br><br>
             </div>
-            <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4">Facial<i class="material-icons right">more_vert</i></span>
-              <p><a href="./facial.html">Ver mas</a></p>
-            </div>
-            <div class="card-reveal">
-              <span class="card-title grey-text text-darken-4">Facial<i class="material-icons right">close</i></span>
-              <p>Los protocolos de servicios proporcionados en el área de facial son previa valoración, se determina tipo de producto de acuerpo a tu piel,  tecnología a utilizar de acuerdo a lo que quieres  cambiar, plan de seguimiento y sesiones aproximadas para tener garantizando que la evolución de tu meta se logre.</p>
-              <p><a href="./facial.html">Ver mas</a></p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col s12 m3">
-          <div class="card z-depth-5">
-            <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator" src="img/FAN1003021.jpg">
-            </div>
-            <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4">Corporal<i class="material-icons right">more_vert</i></span>
-              <p><a href="./corporal.html">Ver mas</a></p>
-            </div>
-            <div class="card-reveal">
-              <span class="card-title grey-text text-darken-4">Corporal<i class="material-icons right">close</i></span>
-              <p>Los protocolos de servicios proporcionados en el área de corporal son previa valoración, se determina aparatología, plan de seguimiento y frecuencia. Contamos con masajes (relajantes, des-contracturantes, reductivos, linfáticos, etc)  con protocolos para combatir sobrepeso, flacidez, estrías, celulitis, acné, modelado sin bisturi y depilación definitiva.</p>
-              <p><a href="./corporal.html">Ver mas</a></p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col s12 m3">
-          <div class="card z-depth-5">
-            <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator" src="img/FAN1002985.jpg">
-            </div>
-            <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4">Spa<i class="material-icons right">more_vert</i></span>
-              <p><a href="./spa.html">Ver mas</a></p>
-            </div>
-            <div class="card-reveal">
-              <span class="card-title grey-text text-darken-4">Spa<i class="material-icons right">close</i></span>
-              <p>Masaje Circulatorio, Relajante, Drenaje Linfático, Masaje de Moldeo con o sin sales, Descontracturante ,Piernas Cansadas.</p>
-              <p><a href="./spa.html">Ver mas</a></p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col s12 m3">
-          <div class="card z-depth-5">
-            <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator" src="img/tecnologia.jpg">
-            </div>
-            <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4">Tecnología<i class="material-icons right">more_vert</i></span>
-              <p><a href="./tecnologia.html">Ver mas</a></p>
-            </div>
-            <div class="card-reveal">
-              <span class="card-title grey-text text-darken-4">Tecnología<i class="material-icons right">close</i></span>
-              <p>Cavitación, Presoterapia, Lipolisis, BEM Therapy, Termoelectroestimulador, Laserterapia, IPL, Depilación Definitiva, Mesoterapia Virtual, Microdermoabrasión.</p>
-              <p><a href="./tecnologia.html">Ver mas</a></p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
-
-
-  <div class="parallax-container valign-wrapper scrollspy fullscreen" style="" id="we">
-
-        <div class="row center">
-          <div class="slider fullscreen">
-            <ul class="slides">
-              <li>
-                <img src="img/filter/1.jpg"> <!-- random image -->
-                <div class="caption center-align">
-                  <!-- <h3>This is our big Tagline!</h3> -->
-                  <h5 class="light grey-text text-lighten-3">Nuestra filosofía es orientarte acerca de los servicios y tratamientos cosmo-estéticos que necesitas para sentirte y verte bella, joven y sana.</h5>
+            <div class="row" style="center;border-right-width: 0px;padding-right: 0px;height: 500px;width: 1200px; ">
+              <div class="col s12 m3" style="padding-left: 0px; padding-right: 0px; width:1000px;">
+                <div class="card card-large z-depth-5" style="overflow: hidden;">
+                  <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="img/servicios1.jpg" style="height:350px; width:350;">
+                  </div>
+                  <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">Industrial y Servicios<i class="material-icons right">more_vert</i></span>
+                    <p><a href="./facial.html">Ver mas</a></p>
+                  </div>
+                  <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">Industrial y Servicios<i class="material-icons right">close</i></span>
+                    <p><a href="./facial.html">Ver mas</a></p>
+                  </div>
                 </div>
-              </li>
-              <li>
-                <img src="background2.jpg"> <!-- random image -->
-                <div class="caption left-align">
-                  <!-- <h3>Left Aligned Caption</h3> -->
-                  <h5 class="light grey-text text-lighten-3">No solo venderte un paquete que muy probablemente no sea óptimo después de algunas sesiones, en cambio te proporcionaremos los protocolos que se adapten al cambio que se obtenga progresivamente y que te lleve a alcanzar esa meta de bienestar que deseas..</h5>
-                </div>
-              </li>
-              <li>
-                <img src="img/filter/5.jpg"> <!-- random image -->
-                <div class="caption right-align">
-                  <!-- <h3>Right Aligned Caption</h3> -->
-                  <h5 class="light grey-text text-lighten-3">  Creemos que no hay eventos u ocasiones especiales para mostrar tu mejor cara, presumir tu figura o simplemente relajarte y alejarte del estrés diario con un delicioso masaje .</h5>
-                </div>
-              </li>
-              <li>
-                <img src="img/nosotros.jpg"> <!-- random image -->
-                <div class="caption center-align">
-                  <!-- <h3>This is our big Tagline!</h3> -->
-                  <h5 class="light grey-text text-lighten-3">Ven y conoce todos nuestros servicios, los cuales son 100% personalizados y aplicados por personal capacitado.</h5>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <h5 class="header col s12 light">Nuestra filosofía es orientarte acerca de los servicios y tratamientos cosmo-estéticos que necesitas para sentirte y verte bella, joven y sana. No solo venderte un paquete que muy probablemente no sea óptimo después de algunas sesiones, en cambio te proporcionaremos los protocolos que se adapten al cambio que se obtenga progresivamente y que te lleve a alcanzar esa meta de bienestar que deseas.
-            Creemos que no hay eventos u ocasiones especiales para mostrar tu mejor cara, presumir tu figura o simplemente relajarte y alejarte del estrés diario con un delicioso masaje .
-            Ven y conoce todos nuestros servicios, los cuales son 100% personalizados y aplicados por personal capacitado.</h5>
-          </div>
+              </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-    </div>
+              <div class="col s12 m3" style="padding-left: 0px; padding-right: 0px; width:1000px;">
+                <div class="card z-depth-5" style="overflow: hidden;">
+                  <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="img/Nosotros1.jpg" style="height:350px; width:350;">
+                  </div>
+                  <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">Desarrollos Comerciales<i class="material-icons right">more_vert</i></span>
+                    <p><a href="./tecnologia.html">Ver mas</a></p>
+                  </div>
+                  <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">Desarrollos Comerciales<i class="material-icons right">close</i></span>
+                    <p><a href="./tecnologia.html">Ver mas</a></p>
+                  </div>
+                </div>
+              </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+              <div class="col s12 m3" style="padding-left: 0px; padding-right: 0px; width:1000px;">
+                <div class="card z-depth-5" style="overflow: hidden;">
+                  <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="img/3.jpg" style="height:350px; width:350;">
+                  </div>
+                  <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">Desarrollos Habitacionales<i class="material-icons right">more_vert</i></span>
+                    <p><a href="./spa.html">Ver mas</a></p>
+                  </div>
+                  <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">Desarrollos Habitacionales<i class="material-icons right">close</i></span>
+                    <p><a href="./spa.html">Ver mas</a></p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
 
     <div class="container scrollspy" id="contact">
       <div class="section">
 
         <div class="row">
 
-          <div class="col s12 m6 ">
-            <h3><i class="mdi-content-send brown-text"></i></h3>
-            <p class="left-align light"></p>
-            <h4> <span  class="z-depth-2"style="background-color:;padding: 10px 20px;color:#fffff;"> Ubicación </span></h4>
 
-            <div id="googleMap" style="width:80%;height:320px;" class="map"></div>
-          </div>
-
-          <div class="col s12 m6">
-            <h4> <span  class="z-depth-2"style="padding: 10px 20px;color:#fffff;"> Contacto </span></h4>
-            <a class="schedule-btn brown-golden black-waves-effect waves-light btn modal-trigger" href="#modal1"> <span class="black-text text-darken-2"><i class="fa fa-calendar" aria-hidden="true"></i> Agenda tu Cita Aquí</span></a>
-            <br> D.Río Tamazunchale 202<br>
-            Planta Baja Local 4<br>
-            Col. Del Valle<br>
-            San Pedro Garza García<br>
-            Nuevo León, México<br>
-            812315.7088<br>
-            Lunes a Viernes 10AM a 7PM<br>
-            Sábados 10AM a 4PM<br>
-            <p class="email-block"><a href="mailto:contacto@kaab.com">contacto@kaab.com</a></p>
+          <div class="col s12 m6" style="width:300px;">
+            <h4 class="z-depth-2"style="padding: 10px 20px;color:#fffff; margin-top:100px; width:190px;"> Contacto </h4>
+            Tel&eacute;fono: 1522 7000
+            <p class="email-block"><a href="mailto:contacto@xi-ka.com">contacto@xi-ka.com</a></p>
           </div>
 
         </div>
@@ -341,55 +236,13 @@ nav{
 
 
 
-    <div class="parallax-container valign-wrapper scrollspy" id="experience">
-          <div class="section no-pad-bot">
-            <div class="container">
-              <div class="row center">
-                <h5 class="header col s12 light">Sabemos que cada persona es única, por eso en kaab spa diseñamos las experiencias que estás por disfrutar de acuerdo al resultado que tu deseas.
-                  Sesiones estudiadas y con la aparatología intercambiable de acuerdo al avance obtenido.</h5>
-                </div>
-              </div>
-            </div>
-            <div class="parallax"><img src="img/servicios.jpg" alt="Unsplashed background img 3" style="display: block; transform: translate3d(-50%, 196px, 0px);"></div>
-          </div>
-      <div id="modal1" class="modal" style="width:90%;height:90%;">
-        <div class="modal-content">
-          <iframe src="https://docs.google.com/forms/d/1wqk_yEpwZYcZi9en0nolbuejDYu2aeBUcpdR1rMEUM4/viewform?embedded=true" width="100%" height="400" frameborder="0" marginheight="0" marginwidth="0" style="overflow : visible">Loading...</iframe>
-        </div>
-      </div>
-      <div id="modal2" class="modal" style="width:90%;height:90%;">
-        <div class="modal-content">
-          <div align="center">
-            <p>Este aviso de Privacidad forma parte del uso del sitio web <strong>www.kaabspa.com</strong>.</p>
-          </div>
-          <p><strong>RESPONSABLE</strong><strong><br /></strong>Kaabspa&nbsp;es una sociedad&nbsp;y estamos ubicados en D. R&iacute;o Tamazunchale 202 ,Planta Baja Local 4,Col. Del Valle,San Pedro Garza Garc&iacute;a,Nuevo Le&oacute;n, M&eacute;xico<strong>.</strong>&nbsp;Nuestro tel&eacute;fono es: <strong>(8123157088)</strong>.<br />Nuestro Responsable de Protecci&oacute;n de Datos es Katia Aranda y se ubica en el mismo domicilio, usted podr&aacute; contactarlo en el correo electr&oacute;nico:&nbsp;<a href="mailto:contacto@kaab.com">contacto@kaab.com</a>.</p>
-          <p>Una de las prioridades de Kaabspa&nbsp;es respetar la privacidad de sus usuarios y mantener segura la informaci&oacute;n y los datos personales que recolecta.</p>
-          <p>Asimismo, Kaabspa informar&aacute; al usuario qu&eacute; tipo de datos recolecta, c&oacute;mo los almacena, la finalidad del archivo, c&oacute;mo los protege, el alcance de su compromiso de confidencialidad y los derechos que &eacute;ste posee como titular de la informaci&oacute;n.</p>
-          <p><strong>DATOS PERSONALES</strong></p>
-          <p><strong></strong>En&nbsp;Kaabspa&nbsp;recogemos informaci&oacute;n desde varias &aacute;reas de nuestros sitios web. Para cada uno de estos sitios, la informaci&oacute;n que se solicita es distinta y se almacena en bases de datos separadas.<br />La informaci&oacute;n deber&aacute; ser veraz y completa. El usuario responder&aacute; en todo momento por los datos proporcionados y en ning&uacute;n caso Kaabspa &nbsp;ser&aacute; responsable de los mismos.</p>
-          <p>&nbsp;</p>
-        </div>
-      </div>
-      <footer class="page-footer brown-golden">
 
-        <div class="footer-copyright brown-golden">
-          <div class="container">
-            <div class="row">
-              <div class="col s12 m10">
-                <span class="black-text text-darken-2">KAABSPA © CONSULTA NUESTRO <a class="waves-effect waves-light  modal-trigger" href="#modal2"><span class="red-text text-darken-2">AVISO DE PRIVACIDAD</span></a> 2016 MONTERREY, MÉXICO</span>
-              </div>
-              <div class="col s12 m2">
-                <a href="https://www.instagram.com/kaabspa.mty/" target="_blank" class="icon-block">
-                  <i class="fa fa-instagram" style="font-size:24px;color:black"></i>
-                </a>
-                <a href="https://www.facebook.com/Kaab-Spa-1708119992761315/"  target="_blank" class="icon-block">
-                  <i class="fa fa-facebook-official" style="font-size:24px;color:black"></i>
-                </a>
-              </div>
+
+          <footer class="page-footer red">
+              <div class="container">
+                    <div class="black-text text-darken-2">XI-KA DESARROLLOS | PROYECTOS | SERVICIOS @ MONTERREY | NL | 2016 | TODOS LOS DERECHOS RESERVADOS </div>
             </div>
-          </div>
-        </div>
-      </footer>
+          </footer>
 </div>
 
       <!--  Scripts-->
