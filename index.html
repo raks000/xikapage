@@ -4,46 +4,85 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
   <title>XI-KA</title>
-  <link href="kaab2.jpg" rel="shortcut icon">
-  <link href="kaab2.jpg" rel="apple-touch-icon-precomposed">
+  <link href="logoxika.jpg" rel="shortcut icon">
+  <link href="logoxika.jpg" rel="apple-touch-icon-precomposed">
   <!-- CSS  -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAjIvovqCXgABdl21Ck1XoLQbdEiKzbIj8&callback=initialize"
-   type="text/javascript"></script>
-
 </head>
-
 <style>
-
 .brand-logo{
   color: white;
 }
+.colorgris{
+  color:#eee;
+}
 
+.btn, .btn-large {
+  text-decoration: none;
+  color: #fff;
+  background-color: #b71c1c;
+  text-align: center;
+  letter-spacing: .5px;
+  transition: .2s ease-out;
+  cursor: pointer;
+}
+
+
+input:not([type]):focus:not([readonly]),
+input[type=text]:focus:not([readonly]),
+input[type=password]:focus:not([readonly]),
+input[type=email]:focus:not([readonly]),
+input[type=url]:focus:not([readonly]),
+input[type=time]:focus:not([readonly]),
+input[type=date]:focus:not([readonly]),
+input[type=datetime]:focus:not([readonly]),
+input[type=datetime-local]:focus:not([readonly]),
+input[type=tel]:focus:not([readonly]),
+input[type=number]:focus:not([readonly]),
+input[type=search]:focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid #b71c1c;
+  box-shadow: 0 1px 0 0 #b71c1c;
+}
+
+input:not([type]):focus:not([readonly]) + label,
+input[type=text]:focus:not([readonly]) + label,
+input[type=password]:focus:not([readonly]) + label,
+input[type=email]:focus:not([readonly]) + label,
+input[type=url]:focus:not([readonly]) + label,
+input[type=time]:focus:not([readonly]) + label,
+input[type=date]:focus:not([readonly]) + label,
+input[type=datetime]:focus:not([readonly]) + label,
+input[type=datetime-local]:focus:not([readonly]) + label,
+input[type=tel]:focus:not([readonly]) + label,
+input[type=number]:focus:not([readonly]) + label,
+input[type=search]:focus:not([readonly]) + label,
+textarea.materialize-textarea:focus:not([readonly]) + label {
+  color: #b71c1c;
+}
+.input-field .prefix.active {
+  color: #b71c1c;
+}
   .return-top .btn-floating{
     background-color : rgb(255, 255, 255);
   }
-
   .return-top.active .btn-floating{
-    background-color :  rgb(204, 169, 137) !important;
+    background-color :  #b71c1c !important;
   }
-
   .return-top .btn-floating>i{
     color : rgb(201, 203, 195);
   }
-
 .map{
   margin-top: 6%;
 }
-
 .slider .indicators .indicator-item.active{
-  background-color : rgb(204, 169, 137);
+  background-color : #b71c1c;
 }
-
 .red{
-  background-color : #EF3B2D !important;
+  background-color : #b71c1c  !important;
 }
 nav{
   position: fixed;
@@ -51,26 +90,20 @@ nav{
   top:0px;
 }
 .main-container{
-
   margin-top: 50px;
-
 }
-
 #sidenav-overlay{
   z-index: 2;
 }
-
 .button-collapse.icon{
   color : rgb(152, 1, 46);
 }
-
 .content {
     width: 980px;
     padding: 20px 20px 0px 20px;
     position: relative;
     background: url(images/proyectos.jpg) top left #FFFFFF;
     height: 360px;}
-
 .hs_container {
         position: relative;
         width: 960px;
@@ -79,7 +112,6 @@ nav{
         clear: both;
         cursor: pointer;
     }
-
 </style>
 <body id="inicio" class="scrollspy">
   <nav  class="red" style="height:65px" role="navigation;">
@@ -87,24 +119,24 @@ nav{
       <a id="logo-container" href="#" class="brand-logo"><img style="height:65px; width:120px;" src="logoxika.jpg"></></a>
       <ul  class="right hide-on-med-and-down">
         <!-- <li><a href="#">Navbar Link</a></li> -->
-        <!-- <li id="menu-item-1246" class="menu-item"><a href="index.html" ><i class="fa fa-home" aria-hidden="true"></i> INICIO</a></li> -->
-        <li id="menu-item-1181" ><a href="./corporal.html"></i> NOSOTROS</a></li>
-        <li id="menu-item-1180" ><a href="./facial.html">SERVICIOS </a></li>
-        <li id="menu-item-1182" ><a href="#experience" >PROYECTOS</a></li>
-        <li id="menu-item-1183" ><a href="#experience" >BOLSA DE TRABAJO</a></li>
-        <li id="menu-item-1184" ><a href="./tecnologia.html" >CLIENTES</a></li>
-        <li id="menu-item-1185" ><a href="#experience" >CURR&Iacute;CULUM</a></li>
-        <!-- <li id="menu-item-1186"  ><a href="#contact" ><i class="fa fa-map-marker" aria-hidden="true"></i> CONTACTO</a></li> -->
+        <li id="menu-item-1246" class="menu-item"><a href="index.html" class="grey-text  text-lighten-2" ><i class=" grey-text  text-lighten-2 fa fa-home" aria-hidden="true"></i> INICIO</a></li>
+        <li id="menu-item-1181" ><a class="grey-text  text-lighten-2" href="./nosotros.html"></i> NOSOTROS</a></li>
+        <li id="menu-item-1180" ><a class="grey-text  text-lighten-2" href="./servicios.html">SERVICIOS </a></li>
+        <li id="menu-item-1182" ><a class="grey-text  text-lighten-2" href="./proyectos.html" >PROYECTOS</a></li>
+        <li id="menu-item-1183" ><a class="grey-text  text-lighten-2" href="./bolsadetrabajo.html" >BOLSA DE TRABAJO</a></li>
+        <li id="menu-item-1184" ><a class="grey-text  text-lighten-2" href="./clientes.html" >CLIENTES</a></li>
+        <li id="menu-item-1185" ><a class="grey-text  text-lighten-2" href="./cv.html" >CURR&Iacute;CULUM</a></li>
+        <li id="menu-item-1185" ><a class="grey-text  text-lighten-2" href="./contacto.html" ><i class="fa fa-map-marker" aria-hidden="true"></i> CONTACTO</a></li>
       </ul>
       <ul id="nav-mobile" class="side-nav">
         <li id="menu-item-1246" class="menu-item"><a href="">INICIO</a></li>
-        <li id="menu-item-1180" ><a href="./corporal.html" onclick="$('.button-collapse').sideNav('hide');">NOSOTROS</a></li>
-        <li id="menu-item-1181" ><a href="#we"  onclick="$('.button-collapse').sideNav('hide');">SERVICIOS</a></li>
-        <li id="menu-item-1182" ><a href="#experience" onclick="$('.button-collapse').sideNav('hide');">PROYECTOS</a></li>
-        <li id="menu-item-1183"  ><a href="#contact" onclick="$('.button-collapse').sideNav('hide');">BOLSA DE TRABAJO</a></li>
-        <li id="menu-item-1183"  ><a href="./tecnologia.html" onclick="$('.button-collapse').sideNav('hide');">CLIENTES</a></li>
-        <li id="menu-item-1183"  ><a href="#contact" onclick="$('.button-collapse').sideNav('hide');">CURRICULUM</a></li>
-        <li id="menu-item-1183"  ><a href="#contact" onclick="$('.button-collapse').sideNav('hide');">CONTACTO</a></li>
+        <li id="menu-item-1180" ><a href="./nosotros.html" onclick="$('.button-collapse').sideNav('hide');">NOSOTROS</a></li>
+        <li id="menu-item-1181" ><a href="./servicios.html"  onclick="$('.button-collapse').sideNav('hide');">SERVICIOS</a></li>
+        <li id="menu-item-1182" ><a href="./proyectos.html" onclick="$('.button-collapse').sideNav('hide');">PROYECTOS</a></li>
+        <li id="menu-item-1183"  ><a href="./bolsadetrabajo.html" onclick="$('.button-collapse').sideNav('hide');">BOLSA DE TRABAJO</a></li>
+        <li id="menu-item-1183"  ><a href="./clientes.html" onclick="$('.button-collapse').sideNav('hide');">CLIENTES</a></li>
+        <li id="menu-item-1183"  ><a href="./cv.html" onclick="$('.button-collapse').sideNav('hide');">CURRICULUM</a></li>
+        <li id="menu-item-1183"  ><a href="./contacto.html" onclick="$('.button-collapse').sideNav('hide');">CONTACTO</a></li>
 
       </ul>
       <a href="#" data-activates="nav-mobile" class="button-collapse icon"><i class="material-icons">menu</i></a>
@@ -121,7 +153,7 @@ nav{
   <div id="index-banner" class="parallax-container service-parallax" style="height:650px;">
     <div class="section no-pad-bot">
       <div class="container">
-        <h2 class="header center white-text condensed light" style="padding-top:50px;">TRANSFORMAMOS EL SERVICIO QUE EL CONSTRUCTOR PROPORCIONA.</h2>
+        <h2 class="header center grey-text  text-lighten-2 condensed " style="padding-top:50px;">TRANSFORMAMOS EL SERVICIO QUE EL CONSTRUCTOR PROPORCIONA.</h2>
         <div class="row center">
         </div>
 
@@ -133,70 +165,167 @@ nav{
       <div id="service" class="container scrollspy">
           <div class="section">
             <div class="row" align="center">
-              <h3> <span style="padding: 10px 20px;color:#fffff;" class="z-depth-5"> Proyectos </span></h3><br><br><br><br>
+              <h3> <span style="padding: 10px 20px;color:#fffff;" class="z-depth-5"> Proyectos </span></h3>
             </div>
-            <div class="row" style="center;border-right-width: 0px;padding-right: 0px;height: 500px;width: 1200px; ">
-              <div class="col s12 m3" style="padding-left: 0px; padding-right: 0px; width:1000px;">
+            <div class="row" align="center" style="center;border-right-width: 0px;padding-right: 0px;height: 500px; ">
+              <div class="col s12 m4" style="padding-left: 20px; padding-right: 20px;">
                 <div class="card card-large z-depth-5" style="overflow: hidden;">
                   <div class="card-image waves-effect waves-block waves-light">
                     <img class="activator" src="img/servicios1.jpg" style="height:350px; width:350;">
                   </div>
                   <div class="card-content">
                     <span class="card-title activator grey-text text-darken-4">Industrial y Servicios<i class="material-icons right">more_vert</i></span>
-                    <p><a href="./facial.html">Ver mas</a></p>
+                    <p><a href="./proyectos.html#1">Ver mas</a></p>
                   </div>
                   <div class="card-reveal">
                     <span class="card-title grey-text text-darken-4">Industrial y Servicios<i class="material-icons right">close</i></span>
-                    <p><a href="./facial.html">Ver mas</a></p>
+                    <p><a href="./proyectos.html#1">Ver mas</a></p>
                   </div>
                 </div>
-              </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+              </div>
 
-              <div class="col s12 m3" style="padding-left: 0px; padding-right: 0px; width:1000px;">
+              <div class="col s12 m4" style="padding-left: 20px; padding-right: 20px; ">
                 <div class="card z-depth-5" style="overflow: hidden;">
                   <div class="card-image waves-effect waves-block waves-light">
                     <img class="activator" src="img/Nosotros1.jpg" style="height:350px; width:350;">
                   </div>
                   <div class="card-content">
                     <span class="card-title activator grey-text text-darken-4">Desarrollos Comerciales<i class="material-icons right">more_vert</i></span>
-                    <p><a href="./tecnologia.html">Ver mas</a></p>
+                    <p><a href="./proyectos.html#2">Ver mas</a></p>
                   </div>
                   <div class="card-reveal">
                     <span class="card-title grey-text text-darken-4">Desarrollos Comerciales<i class="material-icons right">close</i></span>
-                    <p><a href="./tecnologia.html">Ver mas</a></p>
+                    <p><a href="./proyectos.html#2">Ver mas</a></p>
                   </div>
                 </div>
-              </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+              </div>
 
-              <div class="col s12 m3" style="padding-left: 0px; padding-right: 0px; width:1000px;">
+              <div class="col s12 m4" style="padding-left: 20px; padding-right: 20px; ">
                 <div class="card z-depth-5" style="overflow: hidden;">
                   <div class="card-image waves-effect waves-block waves-light">
                     <img class="activator" src="img/3.jpg" style="height:350px; width:350;">
                   </div>
                   <div class="card-content">
                     <span class="card-title activator grey-text text-darken-4">Desarrollos Habitacionales<i class="material-icons right">more_vert</i></span>
-                    <p><a href="./spa.html">Ver mas</a></p>
+                    <p><a href="./proyectos.html#3">Ver mas</a></p>
                   </div>
                   <div class="card-reveal">
                     <span class="card-title grey-text text-darken-4">Desarrollos Habitacionales<i class="material-icons right">close</i></span>
-                    <p><a href="./spa.html">Ver mas</a></p>
+                    <p><a href="./proyectos.html#3">Ver mas</a></p>
                   </div>
                 </div>
               </div>
 
             </div>
           </div>
-        </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        </div>
+
+        <div class="parallax-container valign-wrapper scrollspy fullscreen" style="" id="we">
+
+      <div class="row center">
+        <div class="slider fullscreen">
+          <ul class="slides">
+            <li>
+              <img src="img/filter/1.jpg"> <!-- random image -->
+              <div class="caption center-align">
+                <!-- <h3>This is our big Tagline!</h3> -->
+                <h4 class="light grey-text text-lighten-3">Somos una empresa dedicada a la construcción y desarrollos inmobiliarios, cuyo objetivo es satisfacer las necesidades de nuestros clientes, esto con la ejecución de obras y proyectos que den plusvalía a sus inversiones.</h4>
+              </div>
+            </li>
+            <li>
+              <img src="background2.jpg"> <!-- random image -->
+              <div class="caption left-align">
+                <!-- <h3>Left Aligned Caption</h3> -->
+                <h4 class="light grey-text text-lighten-3"> Tal como la palabra Mixteca XI-KA que significa “en movimiento”, la empresa procura constantemente tener un dinamismo de sus recursos y sus colaboradores a favor de la construcción.</h4>
+              </div>
+            </li>
+            <li>
+              <img src="img/filter/5.jpg"> <!-- random image -->
+              <div class="caption right-align">
+                <!-- <h3>Right Aligned Caption</h3> -->
+                <h4 class="light grey-text text-lighten-3"> Ser una empresa líder en ramo de la construcción, innovadora, en constante evolución, generadora de proyectos inmobiliarios sustentables con el medio ambiente.</h4>
+              </div>
+            </li>
+            <li>
+              <img src="img/nosotros.jpg"> <!-- random image -->
+              <div class="caption center-align">
+                <!-- <h3>This is our big Tagline!</h3> -->
+                <h4 class="light grey-text text-lighten-3">Nuestros valores son parte fundamental de nuestra organización, ya que, gracias a éstos, nuestros actuar un sustento ético lo que conllevará a que cada una de nuestras actividad tenga un valor agregado. </h4>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <h5 class="header col s12 light">Nuestra filosofía es orientarte acerca de los servicios y tratamientos cosmo-estéticos que necesitas para sentirte y verte bella, joven y sana. No solo venderte un paquete que muy probablemente no sea óptimo después de algunas sesiones, en cambio te proporcionaremos los protocolos que se adapten al cambio que se obtenga progresivamente y que te lleve a alcanzar esa meta de bienestar que deseas.
+          Creemos que no hay eventos u ocasiones especiales para mostrar tu mejor cara, presumir tu figura o simplemente relajarte y alejarte del estrés diario con un delicioso masaje .
+          Ven y conoce todos nuestros servicios, los cuales son 100% personalizados y aplicados por personal capacitado.</h5>
+        </div>
+
+  </div>
+  <div class="container">
+  <div class="row" align="center">
+    <br />
+    <h3> <span style="padding: 10px 20px;color:#fffff;" class="z-depth-5"> Clientes </span></h3>
+  </div>
+  <div class="carousel">
+     <a class="carousel-item" ><img src="./img/logos/logo1.gif"></a>
+     <a class="carousel-item" ><img src="./img/logos/logo3.png"></a>
+     <a class="carousel-item" ><img src="./img/logos/logo4.png"></a>
+     <a class="carousel-item" ><img src="./img/logos/logo1.gif"></a>
+     <a class="carousel-item" ><img src="./img/logos/logo3.png"></a>
+     <a class="carousel-item" ><img src="./img/logos/logo4.png"></a>
+   </div>
+
+      </div>
+
+  <div class="container">
+     <div class="section">
+       <div class="row">
+         <form action="https://formspree.io/ite.racso@gmail.com" method="POST" class="col s12">
+
+           <div class="col s12 m12">
+             <h4>Contáctanos / Cotiza</h4>
+             <div class="input-field col s12">
+               <i class="material-icons prefix">account_circle</i>
+               <input id="nombreCompleto" type="text" name="nombre" class="validate">
+               <label for="nombreCompleto">Nombre Completo</label>
+             </div>
+           </div>
+           <div class="col s12 m12">
+             <div class="input-field col s12">
+               <i class="material-icons prefix">mail</i>
+               <input id="correoElectronico" type="email" name="replyto" class="validate">
+               <label for="correoElectronico">Correo Electrónico</label>
+             </div>
+           </div>
+           <div class="col s12 m12">
+             <div class="input-field col s12">
+               <input id="asunto" name="asunto" type="text" class="validate">
+               <label for="asunto">Asunto</label>
+             </div>
+           </div>
+           <div class="col s12 m12">
+             <div class="input-field col s12">
+               <textarea name="mensaje" id="mensaje" class="materialize-textarea" length="240"></textarea>
+               <label for="mensaje">Mensaje</label>
+             </div>
+           </div>
+           <div class="col s12 m6 center">
+             <input class="btn" type="submit" value="Enviar">
+           </div>
+         </form>
+       </div>
+     </div>
+   </div>
 
 
 
-    <div class="container scrollspy" id="contact">
+
+
+    <!-- <div class="container scrollspy" id="contact">
       <div class="section">
-
         <div class="row">
 
-
-          <div class="col s12 m6" style="width:300px;">
+          <div class="col s12 m12" style="width:300px;">
             <h4 class="z-depth-2"style="padding: 10px 20px;color:#fffff; margin-top:100px; width:190px;"> Contacto </h4>
             Tel&eacute;fono: 1522 7000
             <p class="email-block"><a href="mailto:contacto@xi-ka.com">contacto@xi-ka.com</a></p>
@@ -204,49 +333,107 @@ nav{
 
         </div>
       </div>
-    </div>
+    </div> -->
 
 
 
 
 
-          <footer class="page-footer red">
-              <div class="container">
-                    <div class="black-text text-darken-2">XI-KA DESARROLLOS | PROYECTOS | SERVICIOS @ MONTERREY | NL | 2016 | TODOS LOS DERECHOS RESERVADOS </div>
+
+
+
+    <footer id="footer" class="red">
+      <div class="container">
+        <div class="row">
+          <div class="col s4">
+
+              <br>
+            <img src="logoxika.jpg" width="50%" height="auto">
+          </div>
+          <div class="col s4">
+            <p>
+
+            </p><h6 class="grey-text  text-lighten-2">XI-KA DESARROLLOS | PROYECTOS | SERVICIOS</h6>
+              <br>
+              <div class="grey-text  text-lighten-2">
+              SOMOS UNA EMPRESA CONSTRUCTORA Y DESARROLLADORA DE PROYECTOS INMOBILIARIOS. CONSTRUCCIÓN DE PROYECTOS, YA SEA DE CARÁCTER HABITACIONAL, COMERCIAL, INDUSTRIAL Y DE SERVICIOS.
+              </div>
+            <p></p>
+          </div>
+          <div class="col s4">
+                 <br>
+            <h5 class="grey-text  text-lighten-2">Contacto</h5>
+            <p class="grey-text  text-lighten-2">
+              <i class="material-icons">phone</i>    +52 (81) 1522 7000
+              <br>
+              <!-- <br> -->
+              <!-- <i class="material-icons">navigation</i>    Santa Bárbara #431 Col. Centro, San Pedro Garza García N.L. -->
+              <br>
+              <!-- <br> -->
+              <i class="material-icons">email</i>    contacto@xi-ka.com
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright red">
+        <div class="container">
+          <div class="row">
+            <div class="col s12 m10">
+              Copyright © <a class="grey-text  text-lighten-2" href="index.html">XI-KA DESARROLLOS | PROYECTOS | SERVICIOS</a>.  TODOS LOS DERECHOS RESERVADOS
             </div>
-          </footer>
-</div>
+            <div class="col s12 m2">
+
+              <a href="" target="_blank" class="icon-block">
+                <i class="fa fa-facebook-official" style="font-size:24px;color:white"></i>
+              </a>
+              <a href="" target="_blank" class="icon-block">
+                <i class="fa fa-instagram" style="font-size:24px;color:white"></i>
+              </a>
+              <!-- <a href="https://www.linkedin.com/company/9483231?trk=tyah&amp;trkInfo=clickedVertical%3Acompany%2CclickedEntityId%3A9483231%2Cidx%3A2-1-2%2CtarId%3A1470415594354%2Ctas%3Aparalelo%20estandares%20globales" target="_blank" class="icon-block">
+                <i class="fa fa-linkedin" style="font-size:24px;color:white"></i>
+              </a> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  </body>
 
       <!--  Scripts-->
-      <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-      <script src="js/materialize.js"></script>
-      <script src="js/init.js"></script>
-      <script>
-      $(document).ready(function(){
-        // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
-        $('.modal-trigger').leanModal();
-        $('.scrollspy').scrollSpy();
-        $('.slider').slider({full_width: true});
-        $('.parallax').parallax();
 
 
-        ///scrollfire
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+    <script>
+    $(document).ready(function(){
+    $('.carousel').carousel();
+  });
+    $(document).ready(function(){
+      // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+      $('.modal-trigger').leanModal();
+      $('.scrollspy').scrollSpy();
+      $('.slider').slider({full_width: true});
+      $('.parallax').parallax();
+      document.body.style.zoom="80%";
 
-        var options = [
-          /*{
-            selector: '#we', offset: 0, callback: function() {
-              Materialize.toast("Te la comes", 1500 );
-            }
-          }*/
-          {
 
+      ///scrollfire
+
+      var options = [
+        /*{
+          selector: '#we', offset: 0, callback: function() {
+            Materialize.toast("Te la comes", 1500 );
           }
-        ]
+        }*/
+        {
 
-        Materialize.scrollFire(options);
+        }
+      ]
 
-      });
-      </script>
+      Materialize.scrollFire(options);
 
-    </body>
+    });
+    </script>
     </html>
